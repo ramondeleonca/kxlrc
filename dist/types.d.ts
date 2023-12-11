@@ -48,7 +48,7 @@ export declare const KXLRCLine: z.ZodObject<{
     voice: z.ZodOptional<z.ZodEffects<z.ZodString, string, string>>;
     instrumental: z.ZodDefault<z.ZodBoolean>;
     emphasis: z.ZodDefault<z.ZodOptional<z.ZodNumber>>;
-    authors: z.ZodArray<z.ZodString, "many">;
+    authors: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
     comments: z.ZodOptional<z.ZodArray<z.ZodObject<{
         user: z.ZodString;
         text: z.ZodString;
@@ -130,7 +130,7 @@ export declare const KXLRCLyrics: z.ZodArray<z.ZodObject<{
     voice: z.ZodOptional<z.ZodEffects<z.ZodString, string, string>>;
     instrumental: z.ZodDefault<z.ZodBoolean>;
     emphasis: z.ZodDefault<z.ZodOptional<z.ZodNumber>>;
-    authors: z.ZodArray<z.ZodString, "many">;
+    authors: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
     comments: z.ZodOptional<z.ZodArray<z.ZodObject<{
         user: z.ZodString;
         text: z.ZodString;

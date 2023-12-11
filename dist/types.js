@@ -22,7 +22,7 @@ exports.KXLRCLine = zod_1.z.object({
     voice: zod_1.z.string().refine(function (v) { return exports.KXLRCVoices.includes(v); }).optional(),
     instrumental: zod_1.z.boolean().default(false),
     emphasis: zod_1.z.number().optional().default(0),
-    authors: zod_1.z.array(zod_1.z.string()),
+    authors: zod_1.z.array(zod_1.z.string()).optional(),
     comments: zod_1.z.array(exports.KXLRCComment).optional(),
     text: zod_1.z.array(exports.KXLRCTextLineWord).optional(),
     part: zod_1.z.string().refine(function (v) { return exports.KXLRCParts.includes(v); }).optional(),

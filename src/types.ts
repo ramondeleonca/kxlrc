@@ -32,7 +32,7 @@ export const KXLRCLine = z.object({
 
     emphasis: z.number().optional().default(0),
 
-    authors: z.array(z.string()),
+    authors: z.array(z.string()).optional(),
 
     comments: z.array(KXLRCComment).optional(),
 
