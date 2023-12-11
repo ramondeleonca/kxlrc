@@ -18,31 +18,31 @@ export const KXLRCComment = z.object({
 
 export const KXLRCTextLineWord = z.object({
     text: z.string(),
-    timestamp: z.number().nullable(),
+    timestamp: z.number().optional(),
 });
 
 export const KXLRCLine = z.object({
-    timestamp: z.number({ description: "The timestamp of when the line starts" }).nullable(),
+    timestamp: z.number({ description: "The timestamp of when the line starts" }).optional(),
 
-    edited: KXLRCEdited,
+    edited: KXLRCEdited.optional(),
 
-    voice: z.string().refine((v) => KXLRCVoices.includes(v as any)).nullable(),
+    voice: z.string().refine((v) => KXLRCVoices.includes(v as any)).optional(),
 
-    instrumental: z.boolean(),
+    instrumental: z.boolean().default(false),
 
-    emphasis: z.number().nullable(),
+    emphasis: z.number().optional().default(0),
 
     authors: z.array(z.string()),
 
-    comments: z.array(KXLRCComment).nullable(),
+    comments: z.array(KXLRCComment).optional(),
 
-    text: z.array(KXLRCTextLineWord),
+    text: z.array(KXLRCTextLineWord).optional(),
 
-    part: z.string().refine((v) => KXLRCParts.includes(v as any)).nullable(),
+    part: z.string().refine((v) => KXLRCParts.includes(v as any)).optional(),
 
-    verse: z.number().nullable(),
+    verse: z.number().optional(),
 
-    singers: z.array(z.number()).nullable()
+    singers: z.array(z.number()).optional().default([0])
 });
 
 export const KXLRCLyrics = z.array(KXLRCLine);
