@@ -1,4 +1,15 @@
 "use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -92,10 +103,15 @@ var KXLRC = /** @class */ (function () {
      * lyrics.add({ text: "Hello World!" });
      * console.log(lyrics);
      */
-    KXLRC.prototype.add = function (lyric) {
+    KXLRC.prototype.add = function (lyric, index, fillTimestamp) {
+        var _b, _c, _d;
+        if (fillTimestamp === void 0) { fillTimestamp = true; }
         if (!this.lyrics)
             this.lyrics = [];
-        this.lyrics.push(types_1.KXLRCLine.parse(lyric));
+        if (index)
+            (_b = this.lyrics) === null || _b === void 0 ? void 0 : _b.splice(index, 0, types_1.KXLRCLine.parse(__assign(__assign({}, lyric), { timestamp: fillTimestamp && this.lyrics[index - 1] && this.lyrics[index + 1] ? Math.ceil((((_c = this.lyrics[index - 1]) === null || _c === void 0 ? void 0 : _c.timestamp) + ((_d = this.lyrics[index + 1]) === null || _d === void 0 ? void 0 : _d.timestamp)) / 2) : lyric.timestamp })));
+        else
+            this.lyrics.push(types_1.KXLRCLine.parse(lyric));
     };
     /**
      * Add a lyric to the lyrics array
@@ -106,8 +122,13 @@ var KXLRC = /** @class */ (function () {
      * KXLRC.add(lyrics, { text: "Hello World!" });
      * console.log(lyrics);
      */
-    KXLRC.add = function (lyrics, lyric) {
-        types_1.KXLRCLyrics.parse(lyrics).push(types_1.KXLRCLine.parse(lyric));
+    KXLRC.add = function (lyrics, lyric, index, fillTimestamp) {
+        var _b, _c;
+        if (fillTimestamp === void 0) { fillTimestamp = true; }
+        if (index)
+            types_1.KXLRCLyrics.parse(lyrics).splice(index, 0, types_1.KXLRCLine.parse(__assign(__assign({}, lyric), { timestamp: fillTimestamp && lyrics[index - 1] && lyrics[index + 1] ? Math.ceil((((_b = lyrics[index - 1]) === null || _b === void 0 ? void 0 : _b.timestamp) + ((_c = lyrics[index + 1]) === null || _c === void 0 ? void 0 : _c.timestamp)) / 2) : lyric.timestamp })));
+        else
+            types_1.KXLRCLyrics.parse(lyrics).push(types_1.KXLRCLine.parse(lyric));
     };
     /**
      * Remove a lyric from the lyrics array

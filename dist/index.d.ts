@@ -42,7 +42,7 @@ export default class KXLRC {
      * lyrics.add({ text: "Hello World!" });
      * console.log(lyrics);
      */
-    add(lyric: z.infer<typeof KXLRCLine>): void;
+    add(lyric: z.infer<typeof KXLRCLine>, index?: number, fillTimestamp?: boolean): void;
     /**
      * Add a lyric to the lyrics array (alias for add)
      * @param lyric The lyric to add
@@ -51,7 +51,7 @@ export default class KXLRC {
      * lyrics.add({ text: "Hello World!" });
      * console.log(lyrics);
      */
-    addLyric: (lyric: z.infer<typeof KXLRCLine>) => void;
+    addLyric: (lyric: z.infer<typeof KXLRCLine>, index?: number, fillTimestamp?: boolean) => void;
     /**
      * Add a lyric to the lyrics array
      * @param lyrics The lyrics to add the lyric to
@@ -61,7 +61,7 @@ export default class KXLRC {
      * KXLRC.add(lyrics, { text: "Hello World!" });
      * console.log(lyrics);
      */
-    static add(lyrics: z.infer<typeof KXLRCLyrics>, lyric: z.infer<typeof KXLRCLine>): void;
+    static add(lyrics: z.infer<typeof KXLRCLyrics>, lyric: z.infer<typeof KXLRCLine>, index?: number, fillTimestamp?: boolean): void;
     /**
      * Add a lyric to the lyrics array (alias for add)
      * @param lyrics The lyrics to add the lyric to

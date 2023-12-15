@@ -64,9 +64,10 @@ export default class KXLRC {
      * lyrics.add({ text: "Hello World!" });
      * console.log(lyrics);
      */
-    public add(lyric: z.infer<typeof KXLRCLine>) {
+    public add(lyric: z.infer<typeof KXLRCLine>, index?: number, fillTimestamp = true) {
         if (!this.lyrics) this.lyrics = [];
-        this.lyrics.push(KXLRCLine.parse(lyric));
+        if (index) this.lyrics?.splice(index, 0, KXLRCLine.parse({...lyric, timestamp: fillTimestamp && this.lyrics[index - 1] && this.lyrics[index + 1] ? Math.ceil((this.lyrics[index - 1]?.timestamp + this.lyrics[index + 1]?.timestamp) / 2) : lyric.timestamp}));
+        else this.lyrics.push(KXLRCLine.parse(lyric));
     }
 
     /**
@@ -88,8 +89,9 @@ export default class KXLRC {
      * KXLRC.add(lyrics, { text: "Hello World!" });
      * console.log(lyrics);
      */
-    public static add(lyrics: z.infer<typeof KXLRCLyrics>, lyric: z.infer<typeof KXLRCLine>) {
-        KXLRCLyrics.parse(lyrics).push(KXLRCLine.parse(lyric));
+    public static add(lyrics: z.infer<typeof KXLRCLyrics>, lyric: z.infer<typeof KXLRCLine>, index?: number, fillTimestamp = true) {
+        if (index) KXLRCLyrics.parse(lyrics).splice(index, 0, KXLRCLine.parse({...lyric, timestamp: fillTimestamp && lyrics[index - 1] && lyrics[index + 1] ? Math.ceil((lyrics[index - 1]?.timestamp + lyrics[index + 1]?.timestamp) / 2) : lyric.timestamp}));
+        else KXLRCLyrics.parse(lyrics).push(KXLRCLine.parse(lyric));
     }
 
     /**
