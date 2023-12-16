@@ -51,6 +51,16 @@ var KXLRC = /** @class */ (function () {
          */
         this.addLyric = this.add;
         /**
+         * Edit a lyric in the lyrics array (alias for edit)
+         * @param lyric The lyric to edit
+         * @param index The index of the lyric to edit
+         * @example
+         * const lyrics = new KXLRC(fs.readFileSync("lyrics.kxlrc"));
+         * lyrics.edit({ text: "Hello World!" }, 0);
+         * console.log(lyrics);
+         */
+        this.editLyric = this.edit;
+        /**
          * Remove a lyric from the lyrics array (alias for remove)
          * @param lyric The lyric to remove
          * @example
@@ -98,6 +108,8 @@ var KXLRC = /** @class */ (function () {
     /**
      * Add a lyric to the lyrics array
      * @param lyric The lyric to add
+     * @param index The index to add the lyric at
+     * @param fillTimestamp Whether to fill the timestamp of the lyric or not
      * @example
      * const lyrics = new KXLRC(fs.readFileSync("lyrics.kxlrc"));
      * lyrics.add({ text: "Hello World!" });
@@ -117,6 +129,8 @@ var KXLRC = /** @class */ (function () {
      * Add a lyric to the lyrics array
      * @param lyrics The lyrics to add the lyric to
      * @param lyric The lyric to add
+     * @param index The index to add the lyric at
+     * @param fillTimestamp Whether to fill the timestamp of the lyric or not
      * @example
      * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
      * KXLRC.add(lyrics, { text: "Hello World!" });
@@ -129,6 +143,33 @@ var KXLRC = /** @class */ (function () {
             types_1.KXLRCLyrics.parse(lyrics).splice(index, 0, types_1.KXLRCLine.parse(__assign(__assign({}, lyric), { timestamp: fillTimestamp && lyrics[index - 1] && lyrics[index + 1] ? Math.ceil((((_b = lyrics[index - 1]) === null || _b === void 0 ? void 0 : _b.timestamp) + ((_c = lyrics[index + 1]) === null || _c === void 0 ? void 0 : _c.timestamp)) / 2) : lyric.timestamp })));
         else
             types_1.KXLRCLyrics.parse(lyrics).push(types_1.KXLRCLine.parse(lyric));
+    };
+    /**
+     * Edit a lyric in the lyrics array
+     * @param lyric The lyric to edit
+     * @param index The index of the lyric to edit
+     * @example
+     * const lyrics = new KXLRC(fs.readFileSync("lyrics.kxlrc"));
+     * lyrics.edit({ text: "Hello World!" }, 0);
+     * console.log(lyrics);
+     */
+    KXLRC.prototype.edit = function (lyric, index) {
+        if (!this.lyrics)
+            this.lyrics = [];
+        this.lyrics[index] = types_1.KXLRCLine.parse(__assign(__assign({}, (this.lyrics[index] ? this.lyrics[index] : {})), lyric));
+    };
+    /**
+     * Edit a lyric in the lyrics array
+     * @param lyrics The lyrics to edit the lyric in
+     * @param lyric The lyric to edit
+     * @param index The index of the lyric to edit
+     * @example
+     * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
+     * KXLRC.edit(lyrics, { text: "Hello World!" }, 0);
+     * console.log(lyrics);
+     */
+    KXLRC.edit = function (lyrics, lyric, index) {
+        types_1.KXLRCLyrics.parse(lyrics)[index] = types_1.KXLRCLine.parse(__assign(__assign({}, (lyrics[index] ? lyrics[index] : {})), lyric));
     };
     /**
      * Remove a lyric from the lyrics array
@@ -255,6 +296,17 @@ var KXLRC = /** @class */ (function () {
      * console.log(lyrics);
      */
     KXLRC.addLyric = KXLRC.add;
+    /**
+     * Edit a lyric in the lyrics array (alias for edit)
+     * @param lyrics The lyrics to edit the lyric in
+     * @param lyric The lyric to edit
+     * @param index The index of the lyric to edit
+     * @example
+     * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
+     * KXLRC.edit(lyrics, { text: "Hello World!" }, 0);
+     * console.log(lyrics);
+     */
+    KXLRC.editLyric = KXLRC.edit;
     /**
      * Remove a lyric from the lyrics array (alias for remove)
      * @param lyrics The lyrics to remove the lyric from

@@ -37,6 +37,8 @@ export default class KXLRC {
     /**
      * Add a lyric to the lyrics array
      * @param lyric The lyric to add
+     * @param index The index to add the lyric at
+     * @param fillTimestamp Whether to fill the timestamp of the lyric or not
      * @example
      * const lyrics = new KXLRC(fs.readFileSync("lyrics.kxlrc"));
      * lyrics.add({ text: "Hello World!" });
@@ -56,6 +58,8 @@ export default class KXLRC {
      * Add a lyric to the lyrics array
      * @param lyrics The lyrics to add the lyric to
      * @param lyric The lyric to add
+     * @param index The index to add the lyric at
+     * @param fillTimestamp Whether to fill the timestamp of the lyric or not
      * @example
      * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
      * KXLRC.add(lyrics, { text: "Hello World!" });
@@ -72,6 +76,48 @@ export default class KXLRC {
      * console.log(lyrics);
      */
     static addLyric: typeof KXLRC.add;
+    /**
+     * Edit a lyric in the lyrics array
+     * @param lyric The lyric to edit
+     * @param index The index of the lyric to edit
+     * @example
+     * const lyrics = new KXLRC(fs.readFileSync("lyrics.kxlrc"));
+     * lyrics.edit({ text: "Hello World!" }, 0);
+     * console.log(lyrics);
+     */
+    edit(lyric: z.infer<typeof KXLRCLine>, index: number): void;
+    /**
+     * Edit a lyric in the lyrics array (alias for edit)
+     * @param lyric The lyric to edit
+     * @param index The index of the lyric to edit
+     * @example
+     * const lyrics = new KXLRC(fs.readFileSync("lyrics.kxlrc"));
+     * lyrics.edit({ text: "Hello World!" }, 0);
+     * console.log(lyrics);
+     */
+    editLyric: (lyric: z.infer<typeof KXLRCLine>, index: number) => void;
+    /**
+     * Edit a lyric in the lyrics array
+     * @param lyrics The lyrics to edit the lyric in
+     * @param lyric The lyric to edit
+     * @param index The index of the lyric to edit
+     * @example
+     * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
+     * KXLRC.edit(lyrics, { text: "Hello World!" }, 0);
+     * console.log(lyrics);
+     */
+    static edit(lyrics: z.infer<typeof KXLRCLyrics>, lyric: z.infer<typeof KXLRCLine>, index: number): void;
+    /**
+     * Edit a lyric in the lyrics array (alias for edit)
+     * @param lyrics The lyrics to edit the lyric in
+     * @param lyric The lyric to edit
+     * @param index The index of the lyric to edit
+     * @example
+     * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
+     * KXLRC.edit(lyrics, { text: "Hello World!" }, 0);
+     * console.log(lyrics);
+     */
+    static editLyric: typeof KXLRC.edit;
     /**
      * Remove a lyric from the lyrics array
      * @param lyric The lyric to remove

@@ -2,6 +2,20 @@ import msgpackr from 'msgpackr';
 import { z } from 'zod';
 import { KXLRCLyrics, KXLRCLine } from './types';
 
+export type KXLRCEventMap = {
+    "edited": { lyric: z.infer<typeof KXLRCLine>, index: number },
+    "added": { lyric: z.infer<typeof KXLRCLine>, index: number },
+    "removed": { lyric: z.infer<typeof KXLRCLine>, index: number },
+    "parsed": { lyrics: z.infer<typeof KXLRCLyrics> },
+    "play": { started: number, ellapsed: number },
+    "pause": { started: number, ellapsed: number },
+    "stop": { started: number, ellapsed: number },
+    "seek": { started: number, ellapsed: number, time: number },
+    "lyric": { lyric: z.infer<typeof KXLRCLine>, index: number, started: number, ellapsed: number },
+    "word": { word: string, index: number, started: number, ellapsed: number },
+    "end": { started: number, ellapsed: number },
+}
+
 /**
  * A class for parsing and manipulating KXLRC lyrics
  * @example
@@ -12,11 +26,11 @@ import { KXLRCLyrics, KXLRCLine } from './types';
  * @example 
  * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
  */
-export default class KXLRC {
+export default class KXLRC extends EventTarget {
     /**
      * Parsed lyrics array
      */
-    lyrics: z.infer<typeof KXLRCLyrics> | null = null;
+    public lyrics: z.infer<typeof KXLRCLyrics> | null = null;
 
     /**
      * Create a new KXLRC instance
@@ -26,7 +40,11 @@ export default class KXLRC {
      * const lyrics = new KXLRC(fs.readFileSync("lyrics.kxlrc"));
      */
     constructor(lyrics?: z.infer<typeof KXLRCLyrics> | string | Buffer | Uint8Array, packed = true) {
-        if (lyrics) this.lyrics = KXLRC.parse(lyrics, packed);
+        super();
+        if (lyrics) {
+            this.lyrics = KXLRC.parse(lyrics, packed);
+            this.dispatchEvent(new CustomEvent("parsed", { detail: { lyrics: this.lyrics } }));
+        }
     }
 
     /**
@@ -59,6 +77,8 @@ export default class KXLRC {
     /**
      * Add a lyric to the lyrics array
      * @param lyric The lyric to add
+     * @param index The index to add the lyric at
+     * @param fillTimestamp Whether to fill the timestamp of the lyric or not
      * @example
      * const lyrics = new KXLRC(fs.readFileSync("lyrics.kxlrc"));
      * lyrics.add({ text: "Hello World!" });
@@ -68,6 +88,7 @@ export default class KXLRC {
         if (!this.lyrics) this.lyrics = [];
         if (index) this.lyrics?.splice(index, 0, KXLRCLine.parse({...lyric, timestamp: fillTimestamp && this.lyrics[index - 1] && this.lyrics[index + 1] ? Math.ceil((this.lyrics[index - 1]?.timestamp + this.lyrics[index + 1]?.timestamp) / 2) : lyric.timestamp}));
         else this.lyrics.push(KXLRCLine.parse(lyric));
+        this.dispatchEvent(new CustomEvent("added", { detail: { lyric: this.lyrics[index], index } }));
     }
 
     /**
@@ -84,6 +105,8 @@ export default class KXLRC {
      * Add a lyric to the lyrics array
      * @param lyrics The lyrics to add the lyric to
      * @param lyric The lyric to add
+     * @param index The index to add the lyric at
+     * @param fillTimestamp Whether to fill the timestamp of the lyric or not
      * @example
      * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
      * KXLRC.add(lyrics, { text: "Hello World!" });
@@ -106,6 +129,58 @@ export default class KXLRC {
     public static addLyric = KXLRC.add;
 
     /**
+     * Edit a lyric in the lyrics array
+     * @param lyric The lyric to edit
+     * @param index The index of the lyric to edit
+     * @example
+     * const lyrics = new KXLRC(fs.readFileSync("lyrics.kxlrc"));
+     * lyrics.edit({ text: "Hello World!" }, 0);
+     * console.log(lyrics);
+     */
+    public edit(lyric: z.infer<typeof KXLRCLine>, index: number) {
+        if (!this.lyrics) this.lyrics = [];
+        this.lyrics[index] = KXLRCLine.parse({...(this.lyrics[index] ? this.lyrics[index] : {}), ...lyric});
+        this.dispatchEvent(new CustomEvent("edited", { detail: { lyric: this.lyrics[index], index } }));
+    }
+
+    /**
+     * Edit a lyric in the lyrics array (alias for edit)
+     * @param lyric The lyric to edit
+     * @param index The index of the lyric to edit
+     * @example
+     * const lyrics = new KXLRC(fs.readFileSync("lyrics.kxlrc"));
+     * lyrics.edit({ text: "Hello World!" }, 0);
+     * console.log(lyrics);
+     */
+    public editLyric = this.edit;
+
+    /**
+     * Edit a lyric in the lyrics array
+     * @param lyrics The lyrics to edit the lyric in
+     * @param lyric The lyric to edit
+     * @param index The index of the lyric to edit
+     * @example
+     * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
+     * KXLRC.edit(lyrics, { text: "Hello World!" }, 0);
+     * console.log(lyrics);
+     */
+    public static edit(lyrics: z.infer<typeof KXLRCLyrics>, lyric: z.infer<typeof KXLRCLine>, index: number) {
+        KXLRCLyrics.parse(lyrics)[index] = KXLRCLine.parse({...(lyrics[index] ? lyrics[index] : {}), ...lyric});
+    }
+
+    /**
+     * Edit a lyric in the lyrics array (alias for edit)
+     * @param lyrics The lyrics to edit the lyric in
+     * @param lyric The lyric to edit
+     * @param index The index of the lyric to edit
+     * @example
+     * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
+     * KXLRC.edit(lyrics, { text: "Hello World!" }, 0);
+     * console.log(lyrics);
+     */
+    public static editLyric = KXLRC.edit;
+
+    /**
      * Remove a lyric from the lyrics array
      * @param lyric The lyric to remove
      * @example
@@ -114,8 +189,12 @@ export default class KXLRC {
      * console.log(lyrics);
      */
     public remove(lyric: z.infer<typeof KXLRCLine> | number) {
+        let index = typeof lyric === "number" ? lyric : this.lyrics?.indexOf(lyric);
+        if (index === -1) return;
+        lyric = this.lyrics[index];
         if (this.lyrics && typeof lyric === 'number') this.lyrics = this.lyrics.filter((_, i) => i !== lyric);
-        else this.lyrics = this.lyrics.filter(l => l !== lyric);
+        else this.lyrics = this.lyrics.filter((_, i) => i !== index);
+        this.dispatchEvent(new CustomEvent("removed", { detail: { lyric, index } }));
     }
 
     /**
@@ -233,6 +312,10 @@ export default class KXLRC {
      */
     public static stringify(lyrics: z.infer<typeof KXLRCLyrics>) {
         return JSON.stringify(lyrics);
+    }
+
+    public addEventListener<T extends keyof KXLRCEventMap>(type: T, callback: (event: CustomEvent<KXLRCEventMap[T]>) => void, options?: boolean | AddEventListenerOptions): void {
+        super.addEventListener(type, callback, options);
     }
 
     [Symbol.iterator]() {return this.lyrics[Symbol.iterator]()}
