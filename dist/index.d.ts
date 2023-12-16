@@ -1,6 +1,24 @@
 /// <reference types="node" />
 import { z } from 'zod';
 import { KXLRCLyrics, KXLRCLine } from './types';
+export type KXLRCEventMap = {
+    "edited": {
+        lyric: z.infer<typeof KXLRCLine>;
+        index: number;
+    };
+    "added": {
+        lyric: z.infer<typeof KXLRCLine>;
+        index: number;
+    };
+    "removed": {
+        lyric: z.infer<typeof KXLRCLine>;
+        index: number;
+    };
+    "parsed": {
+        lyrics: z.infer<typeof KXLRCLyrics>;
+    };
+    "any": KXLRCEventMap[Exclude<keyof KXLRCEventMap, "any">];
+};
 /**
  * A class for parsing and manipulating KXLRC lyrics
  * @example
@@ -11,7 +29,7 @@ import { KXLRCLyrics, KXLRCLine } from './types';
  * @example
  * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
  */
-export default class KXLRC {
+export default class KXLRC extends EventTarget {
     /**
      * Parsed lyrics array
      */
@@ -243,6 +261,7 @@ export default class KXLRC {
      * @returns The stringified lyrics
      */
     static stringify(lyrics: z.infer<typeof KXLRCLyrics>): string;
+    addEventListener<T extends keyof KXLRCEventMap>(type: T, callback: (event: CustomEvent<KXLRCEventMap[T]>) => void, options?: boolean | AddEventListenerOptions): void;
     [Symbol.iterator](): IterableIterator<{
         timestamp?: number;
         edited?: {

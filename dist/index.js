@@ -1,4 +1,19 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -27,7 +42,8 @@ var types_1 = require("./types");
  * @example
  * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
  */
-var KXLRC = /** @class */ (function () {
+var KXLRC = /** @class */ (function (_super) {
+    __extends(KXLRC, _super);
     /**
      * Create a new KXLRC instance
      * @param lyrics The lyrics to parse
@@ -37,10 +53,11 @@ var KXLRC = /** @class */ (function () {
      */
     function KXLRC(lyrics, packed) {
         if (packed === void 0) { packed = true; }
+        var _this = _super.call(this) || this;
         /**
          * Parsed lyrics array
          */
-        this.lyrics = null;
+        _this.lyrics = null;
         /**
          * Add a lyric to the lyrics array (alias for add)
          * @param lyric The lyric to add
@@ -49,7 +66,7 @@ var KXLRC = /** @class */ (function () {
          * lyrics.add({ text: "Hello World!" });
          * console.log(lyrics);
          */
-        this.addLyric = this.add;
+        _this.addLyric = _this.add;
         /**
          * Edit a lyric in the lyrics array (alias for edit)
          * @param lyric The lyric to edit
@@ -59,7 +76,7 @@ var KXLRC = /** @class */ (function () {
          * lyrics.edit({ text: "Hello World!" }, 0);
          * console.log(lyrics);
          */
-        this.editLyric = this.edit;
+        _this.editLyric = _this.edit;
         /**
          * Remove a lyric from the lyrics array (alias for remove)
          * @param lyric The lyric to remove
@@ -68,10 +85,14 @@ var KXLRC = /** @class */ (function () {
          * lyrics.remove({ text: "Hello World!" });
          * console.log(lyrics);
          */
-        this.removeLyric = this.remove;
-        this[_a] = "KXLRC";
-        if (lyrics)
-            this.lyrics = KXLRC.parse(lyrics, packed);
+        _this.removeLyric = _this.remove;
+        _this[_a] = "KXLRC";
+        if (lyrics) {
+            _this.lyrics = KXLRC.parse(lyrics, packed);
+            _this.dispatchEvent(new CustomEvent("parsed", { detail: { lyrics: _this.lyrics } }));
+            _this.dispatchEvent(new CustomEvent("any", { detail: { lyrics: _this.lyrics } }));
+        }
+        return _this;
     }
     /**
      * Parse the lyrics to a KXLRCLyrics array
@@ -124,6 +145,8 @@ var KXLRC = /** @class */ (function () {
             (_b = this.lyrics) === null || _b === void 0 ? void 0 : _b.splice(index, 0, types_1.KXLRCLine.parse(__assign(__assign({}, lyric), { timestamp: fillTimestamp && this.lyrics[index - 1] && this.lyrics[index + 1] ? Math.ceil((((_c = this.lyrics[index - 1]) === null || _c === void 0 ? void 0 : _c.timestamp) + ((_d = this.lyrics[index + 1]) === null || _d === void 0 ? void 0 : _d.timestamp)) / 2) : lyric.timestamp })));
         else
             this.lyrics.push(types_1.KXLRCLine.parse(lyric));
+        this.dispatchEvent(new CustomEvent("added", { detail: { lyric: this.lyrics[index], index: index } }));
+        this.dispatchEvent(new CustomEvent("any", { detail: { lyric: this.lyrics[index], index: index } }));
     };
     /**
      * Add a lyric to the lyrics array
@@ -157,6 +180,8 @@ var KXLRC = /** @class */ (function () {
         if (!this.lyrics)
             this.lyrics = [];
         this.lyrics[index] = types_1.KXLRCLine.parse(__assign(__assign({}, (this.lyrics[index] ? this.lyrics[index] : {})), lyric));
+        this.dispatchEvent(new CustomEvent("edited", { detail: { lyric: this.lyrics[index], index: index } }));
+        this.dispatchEvent(new CustomEvent("any", { detail: { lyric: this.lyrics[index], index: index } }));
     };
     /**
      * Edit a lyric in the lyrics array
@@ -180,10 +205,17 @@ var KXLRC = /** @class */ (function () {
      * console.log(lyrics);
      */
     KXLRC.prototype.remove = function (lyric) {
+        var _b;
+        var index = typeof lyric === "number" ? lyric : (_b = this.lyrics) === null || _b === void 0 ? void 0 : _b.indexOf(lyric);
+        if (index === -1)
+            return;
+        lyric = this.lyrics[index];
         if (this.lyrics && typeof lyric === 'number')
             this.lyrics = this.lyrics.filter(function (_, i) { return i !== lyric; });
         else
-            this.lyrics = this.lyrics.filter(function (l) { return l !== lyric; });
+            this.lyrics = this.lyrics.filter(function (_, i) { return i !== index; });
+        this.dispatchEvent(new CustomEvent("removed", { detail: { lyric: lyric, index: index } }));
+        this.dispatchEvent(new CustomEvent("any", { detail: { lyric: lyric, index: index } }));
     };
     /**
      * Remove a lyric from the lyrics array
@@ -278,6 +310,9 @@ var KXLRC = /** @class */ (function () {
     KXLRC.stringify = function (lyrics) {
         return JSON.stringify(lyrics);
     };
+    KXLRC.prototype.addEventListener = function (type, callback, options) {
+        _super.prototype.addEventListener.call(this, type, callback, options);
+    };
     KXLRC.prototype[Symbol.iterator] = function () { return this.lyrics[Symbol.iterator](); };
     KXLRC.prototype[(_a = Symbol.toStringTag, Symbol.toPrimitive)] = function (hint) {
         if (hint === 'string')
@@ -318,7 +353,7 @@ var KXLRC = /** @class */ (function () {
      */
     KXLRC.removeLyric = KXLRC.remove;
     return KXLRC;
-}());
+}(EventTarget));
 exports.KXLRC = KXLRC;
 exports.default = KXLRC;
 ;

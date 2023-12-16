@@ -7,13 +7,14 @@ export type KXLRCEventMap = {
     "added": { lyric: z.infer<typeof KXLRCLine>, index: number },
     "removed": { lyric: z.infer<typeof KXLRCLine>, index: number },
     "parsed": { lyrics: z.infer<typeof KXLRCLyrics> },
-    "play": { started: number, ellapsed: number },
-    "pause": { started: number, ellapsed: number },
-    "stop": { started: number, ellapsed: number },
-    "seek": { started: number, ellapsed: number, time: number },
-    "lyric": { lyric: z.infer<typeof KXLRCLine>, index: number, started: number, ellapsed: number },
-    "word": { word: string, index: number, started: number, ellapsed: number },
-    "end": { started: number, ellapsed: number },
+    // "play": { started: number, ellapsed: number },
+    // "pause": { started: number, ellapsed: number },
+    // "stop": { started: number, ellapsed: number },
+    // "seek": { started: number, ellapsed: number, time: number },
+    // "lyric": { lyric: z.infer<typeof KXLRCLine>, index: number, started: number, ellapsed: number },
+    // "word": { word: string, index: number, started: number, ellapsed: number },
+    // "end": { started: number, ellapsed: number },
+    "any": KXLRCEventMap[Exclude<keyof KXLRCEventMap, "any">]
 }
 
 /**
@@ -44,6 +45,7 @@ export default class KXLRC extends EventTarget {
         if (lyrics) {
             this.lyrics = KXLRC.parse(lyrics, packed);
             this.dispatchEvent(new CustomEvent("parsed", { detail: { lyrics: this.lyrics } }));
+            this.dispatchEvent(new CustomEvent("any", { detail: { lyrics: this.lyrics } }));
         }
     }
 
@@ -89,6 +91,7 @@ export default class KXLRC extends EventTarget {
         if (index) this.lyrics?.splice(index, 0, KXLRCLine.parse({...lyric, timestamp: fillTimestamp && this.lyrics[index - 1] && this.lyrics[index + 1] ? Math.ceil((this.lyrics[index - 1]?.timestamp + this.lyrics[index + 1]?.timestamp) / 2) : lyric.timestamp}));
         else this.lyrics.push(KXLRCLine.parse(lyric));
         this.dispatchEvent(new CustomEvent("added", { detail: { lyric: this.lyrics[index], index } }));
+        this.dispatchEvent(new CustomEvent("any", { detail: { lyric: this.lyrics[index], index } }));
     }
 
     /**
@@ -141,6 +144,7 @@ export default class KXLRC extends EventTarget {
         if (!this.lyrics) this.lyrics = [];
         this.lyrics[index] = KXLRCLine.parse({...(this.lyrics[index] ? this.lyrics[index] : {}), ...lyric});
         this.dispatchEvent(new CustomEvent("edited", { detail: { lyric: this.lyrics[index], index } }));
+        this.dispatchEvent(new CustomEvent("any", { detail: { lyric: this.lyrics[index], index } }));
     }
 
     /**
@@ -195,6 +199,7 @@ export default class KXLRC extends EventTarget {
         if (this.lyrics && typeof lyric === 'number') this.lyrics = this.lyrics.filter((_, i) => i !== lyric);
         else this.lyrics = this.lyrics.filter((_, i) => i !== index);
         this.dispatchEvent(new CustomEvent("removed", { detail: { lyric, index } }));
+        this.dispatchEvent(new CustomEvent("any", { detail: { lyric, index } }));
     }
 
     /**
