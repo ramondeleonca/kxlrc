@@ -7,6 +7,10 @@
         "noImplicitAny": true,
         "module": "commonjs",
         "target": "es5",
+        "lib": [
+            "DOM",
+            "DOM.Iterable"
+        ],
         "jsx": "react",
         "allowJs": true,
         "allowSyntheticDefaultImports": true,

@@ -1,6 +1,6 @@
 {
   "name": "@korusbyanthm/kxlrc",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Encoder, decoder, parser and interface for using KXLRC (Korus Extended Lyrics) files",
   "main": "dist/index.js",
   "scripts": {

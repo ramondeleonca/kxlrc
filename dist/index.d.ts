@@ -1,6 +1,8 @@
 /// <reference types="node" />
+/// <reference types="node" />
 import { z } from 'zod';
 import { KXLRCLyrics, KXLRCLine } from './types';
+import { EventEmitter } from 'events';
 export type KXLRCEventMap = {
     "edited": {
         lyric: z.infer<typeof KXLRCLine>;
@@ -29,7 +31,7 @@ export type KXLRCEventMap = {
  * @example
  * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
  */
-export default class KXLRC extends EventTarget {
+export default class KXLRC extends EventEmitter {
     /**
      * Parsed lyrics array
      */
@@ -261,7 +263,14 @@ export default class KXLRC extends EventTarget {
      * @returns The stringified lyrics
      */
     static stringify(lyrics: z.infer<typeof KXLRCLyrics>): string;
-    addEventListener<T extends keyof KXLRCEventMap>(type: T, callback: (event: CustomEvent<KXLRCEventMap[T]>) => void, options?: boolean | AddEventListenerOptions): void;
+    on<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this;
+    addListener<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this;
+    off<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this;
+    removeListener<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this;
+    once<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this;
+    prependListener<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this;
+    prependOnceListener<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this;
+    removeAllListeners<T extends keyof KXLRCEventMap>(eventName?: T): this;
     [Symbol.iterator](): IterableIterator<{
         timestamp?: number;
         edited?: {

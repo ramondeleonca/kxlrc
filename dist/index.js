@@ -32,6 +32,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.KXLRC = void 0;
 var msgpackr_1 = __importDefault(require("msgpackr"));
 var types_1 = require("./types");
+var events_1 = require("events");
 /**
  * A class for parsing and manipulating KXLRC lyrics
  * @example
@@ -89,8 +90,8 @@ var KXLRC = /** @class */ (function (_super) {
         _this[_a] = "KXLRC";
         if (lyrics) {
             _this.lyrics = KXLRC.parse(lyrics, packed);
-            _this.dispatchEvent(new CustomEvent("parsed", { detail: { lyrics: _this.lyrics } }));
-            _this.dispatchEvent(new CustomEvent("any", { detail: { lyrics: _this.lyrics } }));
+            _this.emit("parsed", { detail: { lyrics: _this.lyrics } });
+            _this.emit("any", { detail: { lyrics: _this.lyrics } });
         }
         return _this;
     }
@@ -145,8 +146,8 @@ var KXLRC = /** @class */ (function (_super) {
             (_b = this.lyrics) === null || _b === void 0 ? void 0 : _b.splice(index, 0, types_1.KXLRCLine.parse(__assign(__assign({}, lyric), { timestamp: fillTimestamp && this.lyrics[index - 1] && this.lyrics[index + 1] ? Math.ceil((((_c = this.lyrics[index - 1]) === null || _c === void 0 ? void 0 : _c.timestamp) + ((_d = this.lyrics[index + 1]) === null || _d === void 0 ? void 0 : _d.timestamp)) / 2) : lyric.timestamp })));
         else
             this.lyrics.push(types_1.KXLRCLine.parse(lyric));
-        this.dispatchEvent(new CustomEvent("added", { detail: { lyric: this.lyrics[index], index: index } }));
-        this.dispatchEvent(new CustomEvent("any", { detail: { lyric: this.lyrics[index], index: index } }));
+        this.emit("added", { detail: { lyric: this.lyrics[index], index: index } });
+        this.emit("any", { detail: { lyric: this.lyrics[index], index: index } });
     };
     /**
      * Add a lyric to the lyrics array
@@ -180,8 +181,8 @@ var KXLRC = /** @class */ (function (_super) {
         if (!this.lyrics)
             this.lyrics = [];
         this.lyrics[index] = types_1.KXLRCLine.parse(__assign(__assign({}, (this.lyrics[index] ? this.lyrics[index] : {})), lyric));
-        this.dispatchEvent(new CustomEvent("edited", { detail: { lyric: this.lyrics[index], index: index } }));
-        this.dispatchEvent(new CustomEvent("any", { detail: { lyric: this.lyrics[index], index: index } }));
+        this.emit("edited", { detail: { lyric: this.lyrics[index], index: index } });
+        this.emit("any", { detail: { lyric: this.lyrics[index], index: index } });
     };
     /**
      * Edit a lyric in the lyrics array
@@ -214,8 +215,8 @@ var KXLRC = /** @class */ (function (_super) {
             this.lyrics = this.lyrics.filter(function (_, i) { return i !== lyric; });
         else
             this.lyrics = this.lyrics.filter(function (_, i) { return i !== index; });
-        this.dispatchEvent(new CustomEvent("removed", { detail: { lyric: lyric, index: index } }));
-        this.dispatchEvent(new CustomEvent("any", { detail: { lyric: lyric, index: index } }));
+        this.emit("removed", { detail: { lyric: lyric, index: index } });
+        this.emit("any", { detail: { lyric: lyric, index: index } });
     };
     /**
      * Remove a lyric from the lyrics array
@@ -310,8 +311,29 @@ var KXLRC = /** @class */ (function (_super) {
     KXLRC.stringify = function (lyrics) {
         return JSON.stringify(lyrics);
     };
-    KXLRC.prototype.addEventListener = function (type, callback, options) {
-        _super.prototype.addEventListener.call(this, type, callback, options);
+    KXLRC.prototype.on = function (eventName, listener) {
+        return _super.prototype.on.call(this, eventName, listener);
+    };
+    KXLRC.prototype.addListener = function (eventName, listener) {
+        return _super.prototype.addListener.call(this, eventName, listener);
+    };
+    KXLRC.prototype.off = function (eventName, listener) {
+        return _super.prototype.off.call(this, eventName, listener);
+    };
+    KXLRC.prototype.removeListener = function (eventName, listener) {
+        return _super.prototype.removeListener.call(this, eventName, listener);
+    };
+    KXLRC.prototype.once = function (eventName, listener) {
+        return _super.prototype.once.call(this, eventName, listener);
+    };
+    KXLRC.prototype.prependListener = function (eventName, listener) {
+        return _super.prototype.prependListener.call(this, eventName, listener);
+    };
+    KXLRC.prototype.prependOnceListener = function (eventName, listener) {
+        return _super.prototype.prependOnceListener.call(this, eventName, listener);
+    };
+    KXLRC.prototype.removeAllListeners = function (eventName) {
+        return _super.prototype.removeAllListeners.call(this, eventName);
     };
     KXLRC.prototype[Symbol.iterator] = function () { return this.lyrics[Symbol.iterator](); };
     KXLRC.prototype[(_a = Symbol.toStringTag, Symbol.toPrimitive)] = function (hint) {
@@ -353,7 +375,7 @@ var KXLRC = /** @class */ (function (_super) {
      */
     KXLRC.removeLyric = KXLRC.remove;
     return KXLRC;
-}(EventTarget));
+}(events_1.EventEmitter));
 exports.KXLRC = KXLRC;
 exports.default = KXLRC;
 ;
