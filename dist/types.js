@@ -14,20 +14,20 @@ exports.KXLRCComment = zod_1.z.object({
 });
 exports.KXLRCTextLineWord = zod_1.z.object({
     text: zod_1.z.string(),
-    timestamp: zod_1.z.number().optional(),
+    timestamp: zod_1.z.number().optional().nullable(),
 });
 exports.KXLRCLine = zod_1.z.object({
-    timestamp: zod_1.z.number({ description: "The timestamp of when the line starts" }).optional(),
-    edited: exports.KXLRCEdited.optional(),
-    voice: zod_1.z.string().refine(function (v) { return exports.KXLRCVoices.includes(v); }).optional(),
+    timestamp: zod_1.z.number({ description: "The timestamp of when the line starts" }).optional().nullable(),
+    edited: exports.KXLRCEdited.optional().nullable(),
+    voice: zod_1.z.string().refine(function (v) { return exports.KXLRCVoices.includes(v); }).optional().nullable().default("MF"),
     instrumental: zod_1.z.boolean().default(false),
-    emphasis: zod_1.z.number().optional().default(0),
-    authors: zod_1.z.array(zod_1.z.string()).optional(),
-    comments: zod_1.z.array(exports.KXLRCComment).optional(),
-    text: zod_1.z.array(exports.KXLRCTextLineWord).optional(),
-    part: zod_1.z.string().refine(function (v) { return exports.KXLRCParts.includes(v); }).optional(),
-    verse: zod_1.z.number().optional(),
-    singers: zod_1.z.array(zod_1.z.number()).optional().default([0])
+    emphasis: zod_1.z.number().optional().nullable().default(0),
+    authors: zod_1.z.array(zod_1.z.string()).optional().nullable().default([]),
+    comments: zod_1.z.array(exports.KXLRCComment).optional().nullable().default([]),
+    text: zod_1.z.array(exports.KXLRCTextLineWord).optional().nullable(),
+    part: zod_1.z.string().refine(function (v) { return exports.KXLRCParts.includes(v); }).optional().nullable(),
+    verse: zod_1.z.number().optional().nullable(),
+    singers: zod_1.z.array(zod_1.z.number()).optional().nullable().default([0])
 });
 exports.KXLRCLyrics = zod_1.z.array(exports.KXLRCLine);
 //# sourceMappingURL=types.js.map

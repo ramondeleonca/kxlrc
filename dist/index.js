@@ -180,7 +180,7 @@ var KXLRC = /** @class */ (function (_super) {
     KXLRC.prototype.edit = function (lyric, index) {
         if (!this.lyrics)
             this.lyrics = [];
-        this.lyrics[index] = types_1.KXLRCLine.parse(__assign(__assign({}, (this.lyrics[index] ? this.lyrics[index] : {})), lyric));
+        this.lyrics[index] = types_1.KXLRCLine.partial().parse(__assign(__assign({}, (this.lyrics[index] ? this.lyrics[index] : {})), lyric));
         this.emit("edited", { detail: { lyric: this.lyrics[index], index: index } });
         this.emit("any", { detail: { lyric: this.lyrics[index], index: index } });
     };
@@ -195,7 +195,7 @@ var KXLRC = /** @class */ (function (_super) {
      * console.log(lyrics);
      */
     KXLRC.edit = function (lyrics, lyric, index) {
-        types_1.KXLRCLyrics.parse(lyrics)[index] = types_1.KXLRCLine.parse(__assign(__assign({}, (lyrics[index] ? lyrics[index] : {})), lyric));
+        types_1.KXLRCLyrics.parse(lyrics)[index] = types_1.KXLRCLine.partial().parse(__assign(__assign({}, (lyrics[index] ? lyrics[index] : {})), lyric));
     };
     /**
      * Remove a lyric from the lyrics array

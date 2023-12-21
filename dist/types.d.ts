@@ -25,7 +25,7 @@ export declare const KXLRCComment: z.ZodObject<{
 }>;
 export declare const KXLRCTextLineWord: z.ZodObject<{
     text: z.ZodString;
-    timestamp: z.ZodOptional<z.ZodNumber>;
+    timestamp: z.ZodNullable<z.ZodOptional<z.ZodNumber>>;
 }, "strip", z.ZodTypeAny, {
     text?: string;
     timestamp?: number;
@@ -34,8 +34,8 @@ export declare const KXLRCTextLineWord: z.ZodObject<{
     timestamp?: number;
 }>;
 export declare const KXLRCLine: z.ZodObject<{
-    timestamp: z.ZodOptional<z.ZodNumber>;
-    edited: z.ZodOptional<z.ZodObject<{
+    timestamp: z.ZodNullable<z.ZodOptional<z.ZodNumber>>;
+    edited: z.ZodNullable<z.ZodOptional<z.ZodObject<{
         timestamp: z.ZodNumber;
         user: z.ZodString;
     }, "strip", z.ZodTypeAny, {
@@ -44,12 +44,12 @@ export declare const KXLRCLine: z.ZodObject<{
     }, {
         timestamp?: number;
         user?: string;
-    }>>;
-    voice: z.ZodOptional<z.ZodEffects<z.ZodString, string, string>>;
+    }>>>;
+    voice: z.ZodDefault<z.ZodNullable<z.ZodOptional<z.ZodEffects<z.ZodString, string, string>>>>;
     instrumental: z.ZodDefault<z.ZodBoolean>;
-    emphasis: z.ZodDefault<z.ZodOptional<z.ZodNumber>>;
-    authors: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
-    comments: z.ZodOptional<z.ZodArray<z.ZodObject<{
+    emphasis: z.ZodDefault<z.ZodNullable<z.ZodOptional<z.ZodNumber>>>;
+    authors: z.ZodDefault<z.ZodNullable<z.ZodOptional<z.ZodArray<z.ZodString, "many">>>>;
+    comments: z.ZodDefault<z.ZodNullable<z.ZodOptional<z.ZodArray<z.ZodObject<{
         user: z.ZodString;
         text: z.ZodString;
     }, "strip", z.ZodTypeAny, {
@@ -58,20 +58,20 @@ export declare const KXLRCLine: z.ZodObject<{
     }, {
         user?: string;
         text?: string;
-    }>, "many">>;
-    text: z.ZodOptional<z.ZodArray<z.ZodObject<{
+    }>, "many">>>>;
+    text: z.ZodNullable<z.ZodOptional<z.ZodArray<z.ZodObject<{
         text: z.ZodString;
-        timestamp: z.ZodOptional<z.ZodNumber>;
+        timestamp: z.ZodNullable<z.ZodOptional<z.ZodNumber>>;
     }, "strip", z.ZodTypeAny, {
         text?: string;
         timestamp?: number;
     }, {
         text?: string;
         timestamp?: number;
-    }>, "many">>;
-    part: z.ZodOptional<z.ZodEffects<z.ZodString, string, string>>;
-    verse: z.ZodOptional<z.ZodNumber>;
-    singers: z.ZodDefault<z.ZodOptional<z.ZodArray<z.ZodNumber, "many">>>;
+    }>, "many">>>;
+    part: z.ZodNullable<z.ZodOptional<z.ZodEffects<z.ZodString, string, string>>>;
+    verse: z.ZodNullable<z.ZodOptional<z.ZodNumber>>;
+    singers: z.ZodDefault<z.ZodNullable<z.ZodOptional<z.ZodArray<z.ZodNumber, "many">>>>;
 }, "strip", z.ZodTypeAny, {
     timestamp?: number;
     edited?: {
@@ -116,8 +116,8 @@ export declare const KXLRCLine: z.ZodObject<{
     singers?: number[];
 }>;
 export declare const KXLRCLyrics: z.ZodArray<z.ZodObject<{
-    timestamp: z.ZodOptional<z.ZodNumber>;
-    edited: z.ZodOptional<z.ZodObject<{
+    timestamp: z.ZodNullable<z.ZodOptional<z.ZodNumber>>;
+    edited: z.ZodNullable<z.ZodOptional<z.ZodObject<{
         timestamp: z.ZodNumber;
         user: z.ZodString;
     }, "strip", z.ZodTypeAny, {
@@ -126,12 +126,12 @@ export declare const KXLRCLyrics: z.ZodArray<z.ZodObject<{
     }, {
         timestamp?: number;
         user?: string;
-    }>>;
-    voice: z.ZodOptional<z.ZodEffects<z.ZodString, string, string>>;
+    }>>>;
+    voice: z.ZodDefault<z.ZodNullable<z.ZodOptional<z.ZodEffects<z.ZodString, string, string>>>>;
     instrumental: z.ZodDefault<z.ZodBoolean>;
-    emphasis: z.ZodDefault<z.ZodOptional<z.ZodNumber>>;
-    authors: z.ZodOptional<z.ZodArray<z.ZodString, "many">>;
-    comments: z.ZodOptional<z.ZodArray<z.ZodObject<{
+    emphasis: z.ZodDefault<z.ZodNullable<z.ZodOptional<z.ZodNumber>>>;
+    authors: z.ZodDefault<z.ZodNullable<z.ZodOptional<z.ZodArray<z.ZodString, "many">>>>;
+    comments: z.ZodDefault<z.ZodNullable<z.ZodOptional<z.ZodArray<z.ZodObject<{
         user: z.ZodString;
         text: z.ZodString;
     }, "strip", z.ZodTypeAny, {
@@ -140,20 +140,20 @@ export declare const KXLRCLyrics: z.ZodArray<z.ZodObject<{
     }, {
         user?: string;
         text?: string;
-    }>, "many">>;
-    text: z.ZodOptional<z.ZodArray<z.ZodObject<{
+    }>, "many">>>>;
+    text: z.ZodNullable<z.ZodOptional<z.ZodArray<z.ZodObject<{
         text: z.ZodString;
-        timestamp: z.ZodOptional<z.ZodNumber>;
+        timestamp: z.ZodNullable<z.ZodOptional<z.ZodNumber>>;
     }, "strip", z.ZodTypeAny, {
         text?: string;
         timestamp?: number;
     }, {
         text?: string;
         timestamp?: number;
-    }>, "many">>;
-    part: z.ZodOptional<z.ZodEffects<z.ZodString, string, string>>;
-    verse: z.ZodOptional<z.ZodNumber>;
-    singers: z.ZodDefault<z.ZodOptional<z.ZodArray<z.ZodNumber, "many">>>;
+    }>, "many">>>;
+    part: z.ZodNullable<z.ZodOptional<z.ZodEffects<z.ZodString, string, string>>>;
+    verse: z.ZodNullable<z.ZodOptional<z.ZodNumber>>;
+    singers: z.ZodDefault<z.ZodNullable<z.ZodOptional<z.ZodArray<z.ZodNumber, "many">>>>;
 }, "strip", z.ZodTypeAny, {
     timestamp?: number;
     edited?: {

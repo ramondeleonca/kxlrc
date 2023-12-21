@@ -141,9 +141,9 @@ export default class KXLRC extends EventEmitter {
      * lyrics.edit({ text: "Hello World!" }, 0);
      * console.log(lyrics);
      */
-    public edit(lyric: z.infer<typeof KXLRCLine>, index: number) {
+    public edit(lyric: Partial<z.infer<typeof KXLRCLine>>, index: number) {
         if (!this.lyrics) this.lyrics = [];
-        this.lyrics[index] = KXLRCLine.parse({...(this.lyrics[index] ? this.lyrics[index] : {}), ...lyric});
+        this.lyrics[index] = KXLRCLine.partial().parse({...(this.lyrics[index] ? this.lyrics[index] : {}), ...lyric});
         this.emit("edited", { detail: { lyric: this.lyrics[index], index } });
         this.emit("any", { detail: { lyric: this.lyrics[index], index } });
     }
@@ -169,8 +169,8 @@ export default class KXLRC extends EventEmitter {
      * KXLRC.edit(lyrics, { text: "Hello World!" }, 0);
      * console.log(lyrics);
      */
-    public static edit(lyrics: z.infer<typeof KXLRCLyrics>, lyric: z.infer<typeof KXLRCLine>, index: number) {
-        KXLRCLyrics.parse(lyrics)[index] = KXLRCLine.parse({...(lyrics[index] ? lyrics[index] : {}), ...lyric});
+    public static edit(lyrics: Partial<z.infer<typeof KXLRCLyrics>>, lyric: z.infer<typeof KXLRCLine>, index: number) {
+        KXLRCLyrics.parse(lyrics)[index] = KXLRCLine.partial().parse({...(lyrics[index] ? lyrics[index] : {}), ...lyric});
     }
 
     /**

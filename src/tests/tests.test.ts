@@ -59,3 +59,11 @@ describe("KXLRC.stringify", () => {
         expect(new KXLRC(lyricsJSON).pack().toString("hex")).toEqual(lyricsMsgPack.toString("hex"));
     });
 });
+
+describe("KXLRC.edit", () => {
+    test("Edits Lyrics", () => {
+        const kxlrc = new KXLRC(lyricsJSON);
+        kxlrc.edit({text: [{text: "hi"}]}, 0);
+        expect(kxlrc.lyrics![0].text![0].text).toEqual("hi");
+    });
+})

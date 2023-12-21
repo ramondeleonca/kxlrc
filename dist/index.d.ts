@@ -105,7 +105,7 @@ export default class KXLRC extends EventEmitter {
      * lyrics.edit({ text: "Hello World!" }, 0);
      * console.log(lyrics);
      */
-    edit(lyric: z.infer<typeof KXLRCLine>, index: number): void;
+    edit(lyric: Partial<z.infer<typeof KXLRCLine>>, index: number): void;
     /**
      * Edit a lyric in the lyrics array (alias for edit)
      * @param lyric The lyric to edit
@@ -115,7 +115,7 @@ export default class KXLRC extends EventEmitter {
      * lyrics.edit({ text: "Hello World!" }, 0);
      * console.log(lyrics);
      */
-    editLyric: (lyric: z.infer<typeof KXLRCLine>, index: number) => void;
+    editLyric: (lyric: Partial<z.infer<typeof KXLRCLine>>, index: number) => void;
     /**
      * Edit a lyric in the lyrics array
      * @param lyrics The lyrics to edit the lyric in
@@ -126,7 +126,7 @@ export default class KXLRC extends EventEmitter {
      * KXLRC.edit(lyrics, { text: "Hello World!" }, 0);
      * console.log(lyrics);
      */
-    static edit(lyrics: z.infer<typeof KXLRCLyrics>, lyric: z.infer<typeof KXLRCLine>, index: number): void;
+    static edit(lyrics: Partial<z.infer<typeof KXLRCLyrics>>, lyric: z.infer<typeof KXLRCLine>, index: number): void;
     /**
      * Edit a lyric in the lyrics array (alias for edit)
      * @param lyrics The lyrics to edit the lyric in
