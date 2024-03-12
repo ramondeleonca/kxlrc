@@ -30,7 +30,7 @@ song_file_path = input("Enter song file path: ")
 
 pygame.mixer.music.load(song_file_path)
 
-with open(lyrics_file_path, "r") as f:
+with open(lyrics_file_path, "r", encoding="utf-8") as f:
     lyrics: list[dict[str, Any]] = json.load(f)
 
 print("1: Timestamp lines (Timestamp when a line is sung)")
@@ -223,7 +223,7 @@ print("2: Save to new file")
 option = input("Enter option: ")
 
 if option == "1":
-    with open(lyrics_file_path, "w") as f:
+    with open(lyrics_file_path, "w", encoding="utf-8") as f:
         json.dump(result, f, indent=4)
 else:
     print("Saving to a new file...")
@@ -233,5 +233,5 @@ else:
             filename = "convert_result"
         else:
             filename = input("Enter filename: ")
-    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), filename + ".json"), "w") as f:
+    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), filename + ".json"), "w", encoding="utf-8") as f:
         json.dump(result, f, indent=4)

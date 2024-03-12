@@ -22,26 +22,16 @@ export const KXLRCTextLineWord = z.object({
 });
 
 export const KXLRCLine = z.object({
-    timestamp: z.number({ description: "The timestamp of when the line starts" }).optional().nullable(),
-
+    timestamp: z.number().optional().nullable(),
     edited: KXLRCEdited.optional().nullable(),
-
     voice: z.string().refine((v) => KXLRCVoices.includes(v as any)).optional().nullable().default("MF"),
-
     instrumental: z.boolean().default(false),
-
     emphasis: z.number().optional().nullable().default(0),
-
     authors: z.array(z.string()).optional().nullable().default([]),
-
     comments: z.array(KXLRCComment).optional().nullable().default([]),
-
     text: z.array(KXLRCTextLineWord).optional().nullable(),
-
     part: z.string().refine((v) => KXLRCParts.includes(v as any)).optional().nullable(),
-
     verse: z.number().optional().nullable(),
-
     singers: z.array(z.number()).optional().nullable().default([0])
 });
 

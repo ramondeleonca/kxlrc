@@ -49,7 +49,7 @@ song_file_path = input("Enter song file path: ")
 
 pygame.mixer.music.load(song_file_path)
 
-with open(lyrics_file_path, "r") as f:
+with open(lyrics_file_path, "r", "utf-8") as f:
     lyrics: list[dict[str, Any]] = json.load(f)
 
 print("Starting in 3...")
