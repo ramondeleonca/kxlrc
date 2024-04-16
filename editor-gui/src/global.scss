@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+textarea {
+    @apply mb-4;
+    background-color: transparent;
+    outline: 1px solid white;
+    color: white;
+    font-weight: 500;
+    font-size: x-large;
+    height: fit-content;
+    vertical-align: middle;
+    padding-block: 4px;
+    line-height: 1;
+}

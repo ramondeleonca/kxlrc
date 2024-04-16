@@ -1,0 +1,4094 @@
+[
+    {
+        "timestamp": 4543,
+        "edited": {
+            "timestamp": 1700533081285,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "You,",
+                "timestamp": 1878
+            },
+            {
+                "text": "I",
+                "timestamp": 2154
+            },
+            {
+                "text": "see",
+                "timestamp": 2623
+            },
+            {
+                "text": "things",
+                "timestamp": 2891
+            },
+            {
+                "text": "differently",
+                "timestamp": 4640
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 14271,
+        "edited": {
+            "timestamp": 1700533091014,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Because",
+                "timestamp": 4987
+            },
+            {
+                "text": "of",
+                "timestamp": 5393
+            },
+            {
+                "text": "you,",
+                "timestamp": 6902
+            },
+            {
+                "text": "I",
+                "timestamp": 7207
+            },
+            {
+                "text": "see",
+                "timestamp": 7631
+            },
+            {
+                "text": "what",
+                "timestamp": 7853
+            },
+            {
+                "text": "we",
+                "timestamp": 8280
+            },
+            {
+                "text": "could",
+                "timestamp": 8522
+            },
+            {
+                "text": "be",
+                "timestamp": 13790
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 21281,
+        "edited": {
+            "timestamp": 1700533098023,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Ey",
+                "timestamp": 21322
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 23566,
+        "edited": {
+            "timestamp": 1700533100310,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Miko,",
+                "timestamp": 22608
+            },
+            {
+                "text": "ey",
+                "timestamp": 23880
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 26407,
+        "edited": {
+            "timestamp": 1700533103156,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Miko,",
+                "timestamp": 25121
+            },
+            {
+                "text": "ey",
+                "timestamp": 26428
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 27999,
+        "edited": {
+            "timestamp": 1700533104750,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Miko,",
+                "timestamp": 27702
+            },
+            {
+                "text": "prr",
+                "timestamp": 28229
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 29820,
+        "edited": {
+            "timestamp": 1700533106567,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "It\u00e2\u20ac\u00b2s",
+                "timestamp": 28444
+            },
+            {
+                "text": "baby",
+                "timestamp": 28712
+            },
+            {
+                "text": "Miko",
+                "timestamp": 29713
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 32769,
+        "edited": {
+            "timestamp": 1700533109516,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Tu",
+                "timestamp": 29962
+            },
+            {
+                "text": "mirada",
+                "timestamp": 30232
+            },
+            {
+                "text": "e'",
+                "timestamp": 30461
+            },
+            {
+                "text": "profunda",
+                "timestamp": 30632
+            },
+            {
+                "text": "y",
+                "timestamp": 30975
+            },
+            {
+                "text": "la",
+                "timestamp": 31256
+            },
+            {
+                "text": "m\u00c3\u00ada",
+                "timestamp": 31633
+            },
+            {
+                "text": "e\u00e2\u20ac\u00b2",
+                "timestamp": 31965
+            },
+            {
+                "text": "penetrante",
+                "timestamp": 32159
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 35138,
+        "edited": {
+            "timestamp": 1700533111888,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Yo",
+                "timestamp": 33245
+            },
+            {
+                "text": "siento",
+                "timestamp": 33537
+            },
+            {
+                "text": "que",
+                "timestamp": 33743
+            },
+            {
+                "text": "te",
+                "timestamp": 34075
+            },
+            {
+                "text": "conozco",
+                "timestamp": 34256
+            },
+            {
+                "text": "de",
+                "timestamp": 34544
+            },
+            {
+                "text": "ante'",
+                "timestamp": 34968
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 37429,
+        "edited": {
+            "timestamp": 1700533114173,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Me",
+                "timestamp": 35512
+            },
+            {
+                "text": "dijo",
+                "timestamp": 35673
+            },
+            {
+                "text": "que",
+                "timestamp": 35898
+            },
+            {
+                "text": "nunca",
+                "timestamp": 36076
+            },
+            {
+                "text": "hab\u00c3\u00ada",
+                "timestamp": 36415
+            },
+            {
+                "text": "esta'o",
+                "timestamp": 36737
+            },
+            {
+                "text": "con",
+                "timestamp": 36905
+            },
+            {
+                "text": "un",
+                "timestamp": 37247
+            },
+            {
+                "text": "cantante",
+                "timestamp": 37554
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 38736,
+        "edited": {
+            "timestamp": 1700533115478,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Nah,",
+                "timestamp": 37904
+            },
+            {
+                "text": "no",
+                "timestamp": 38076
+            },
+            {
+                "text": "te",
+                "timestamp": 38294
+            },
+            {
+                "text": "creo",
+                "timestamp": 38726
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 41625,
+        "edited": {
+            "timestamp": 1700533118365,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Que",
+                "timestamp": 38958
+            },
+            {
+                "text": "se",
+                "timestamp": 39131
+            },
+            {
+                "text": "joda,",
+                "timestamp": 39306
+            },
+            {
+                "text": "mami,",
+                "timestamp": 39499
+            },
+            {
+                "text": "voy",
+                "timestamp": 39840
+            },
+            {
+                "text": "pa",
+                "timestamp": 40016
+            },
+            {
+                "text": "dentro",
+                "timestamp": 40498
+            },
+            {
+                "text": "flow",
+                "timestamp": 40670
+            },
+            {
+                "text": "Curbelo",
+                "timestamp": 40823
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 44877,
+        "edited": {
+            "timestamp": 1700533121627,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Ey,",
+                "timestamp": 42333
+            },
+            {
+                "text": "pa",
+                "timestamp": 42494
+            },
+            {
+                "text": "que",
+                "timestamp": 42765
+            },
+            {
+                "text": "te",
+                "timestamp": 42946
+            },
+            {
+                "text": "venga\u00e2\u20ac\u00b2",
+                "timestamp": 43242
+            },
+            {
+                "text": "r\u00c3\u00a1pido",
+                "timestamp": 43447
+            },
+            {
+                "text": "no",
+                "timestamp": 43638
+            },
+            {
+                "text": "necesito",
+                "timestamp": 43853
+            },
+            {
+                "text": "ole\u00e2\u20ac\u00b2lo",
+                "timestamp": 44821
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 47568,
+        "edited": {
+            "timestamp": 1700533124312,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "En",
+                "timestamp": 45319
+            },
+            {
+                "text": "to'o",
+                "timestamp": 45487
+            },
+            {
+                "text": "mi\u00e2\u20ac\u00b2",
+                "timestamp": 45706
+            },
+            {
+                "text": "video'",
+                "timestamp": 45889
+            },
+            {
+                "text": "te",
+                "timestamp": 46098
+            },
+            {
+                "text": "pusieron",
+                "timestamp": 46394
+            },
+            {
+                "text": "de",
+                "timestamp": 46817
+            },
+            {
+                "text": "modelo",
+                "timestamp": 47231
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 50741,
+        "edited": {
+            "timestamp": 1700533127486,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Mmm,",
+                "timestamp": 47980
+            },
+            {
+                "text": "dame",
+                "timestamp": 48163
+            },
+            {
+                "text": "booty,",
+                "timestamp": 48672
+            },
+            {
+                "text": "dame",
+                "timestamp": 48873
+            },
+            {
+                "text": "cara,",
+                "timestamp": 49298
+            },
+            {
+                "text": "dame",
+                "timestamp": 49453
+            },
+            {
+                "text": "pelo",
+                "timestamp": 50352
+            },
+            {
+                "text": "(perra),",
+                "timestamp": 50517
+            },
+            {
+                "text": "wou",
+                "timestamp": 50878
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 52876,
+        "edited": {
+            "timestamp": 1700533129626,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Ella",
+                "timestamp": 51439
+            },
+            {
+                "text": "no",
+                "timestamp": 51615
+            },
+            {
+                "text": "e\u00e2\u20ac\u00b2",
+                "timestamp": 51823
+            },
+            {
+                "text": "puta,",
+                "timestamp": 52014
+            },
+            {
+                "text": "ella",
+                "timestamp": 52341
+            },
+            {
+                "text": "e'",
+                "timestamp": 52513
+            },
+            {
+                "text": "mujer",
+                "timestamp": 52689
+            },
+            {
+                "text": "alegre",
+                "timestamp": 53064
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 55350,
+        "edited": {
+            "timestamp": 1700533132096,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Fina,",
+                "timestamp": 53361
+            },
+            {
+                "text": "pero",
+                "timestamp": 53556
+            },
+            {
+                "text": "le",
+                "timestamp": 53750
+            },
+            {
+                "text": "gusta",
+                "timestamp": 54000
+            },
+            {
+                "text": "la",
+                "timestamp": 54235
+            },
+            {
+                "text": "calle",
+                "timestamp": 54446
+            },
+            {
+                "text": "\u00e2\u20ac\u00b2e",
+                "timestamp": 54637
+            },
+            {
+                "text": "PR",
+                "timestamp": 55097
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 57846,
+        "edited": {
+            "timestamp": 1700533134596,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Diva,",
+                "timestamp": 55569
+            },
+            {
+                "text": "se",
+                "timestamp": 56035
+            },
+            {
+                "text": "tira",
+                "timestamp": 56231
+            },
+            {
+                "text": "a",
+                "timestamp": 56444
+            },
+            {
+                "text": "hombre'",
+                "timestamp": 56685
+            },
+            {
+                "text": "y",
+                "timestamp": 57045
+            },
+            {
+                "text": "tambi\u00c3\u00a9n",
+                "timestamp": 57316
+            },
+            {
+                "text": "mujere'",
+                "timestamp": 57564
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 60829,
+        "edited": {
+            "timestamp": 1700533137575,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "E\u00e2\u20ac\u00b2",
+                "timestamp": 58196
+            },
+            {
+                "text": "m\u00c3\u00ada",
+                "timestamp": 58637
+            },
+            {
+                "text": "cuando",
+                "timestamp": 58847
+            },
+            {
+                "text": "me",
+                "timestamp": 59032
+            },
+            {
+                "text": "pide",
+                "timestamp": 59223
+            },
+            {
+                "text": "que",
+                "timestamp": 59450
+            },
+            {
+                "text": "la",
+                "timestamp": 59659
+            },
+            {
+                "text": "grabe,",
+                "timestamp": 59843
+            },
+            {
+                "text": "pue\u00e2\u20ac\u00b2",
+                "timestamp": 60198
+            },
+            {
+                "text": "dale",
+                "timestamp": 60768
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 63748,
+        "edited": {
+            "timestamp": 1700533140491,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Me",
+                "timestamp": 61015
+            },
+            {
+                "text": "gustan",
+                "timestamp": 61242
+            },
+            {
+                "text": "la'",
+                "timestamp": 61424
+            },
+            {
+                "text": "bichi\u00e2\u20ac\u00b2",
+                "timestamp": 61590
+            },
+            {
+                "text": "y",
+                "timestamp": 61908
+            },
+            {
+                "text": "la'",
+                "timestamp": 62107
+            },
+            {
+                "text": "yale\u00e2\u20ac\u00b2,",
+                "timestamp": 62292
+            },
+            {
+                "text": "kinki'",
+                "timestamp": 62766
+            },
+            {
+                "text": "y",
+                "timestamp": 63381
+            },
+            {
+                "text": "salvaje\u00e2\u20ac\u00b2",
+                "timestamp": 63912
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 66670,
+        "edited": {
+            "timestamp": 1700533143417,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "T\u00c3\u00admida,",
+                "timestamp": 64212
+            },
+            {
+                "text": "pero",
+                "timestamp": 64568
+            },
+            {
+                "text": "no",
+                "timestamp": 64767
+            },
+            {
+                "text": "cuando",
+                "timestamp": 64969
+            },
+            {
+                "text": "me",
+                "timestamp": 65314
+            },
+            {
+                "text": "pide",
+                "timestamp": 65610
+            },
+            {
+                "text": "que",
+                "timestamp": 65952
+            },
+            {
+                "text": "baje",
+                "timestamp": 66224
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 69094,
+        "edited": {
+            "timestamp": 1700533145845,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Vamo'",
+                "timestamp": 66922
+            },
+            {
+                "text": "pa",
+                "timestamp": 67229
+            },
+            {
+                "text": "\"LALA",
+                "timestamp": 67501
+            },
+            {
+                "text": "Remix\",",
+                "timestamp": 68085
+            },
+            {
+                "text": "te",
+                "timestamp": 68415
+            },
+            {
+                "text": "quit\u00c3\u00a9",
+                "timestamp": 68701
+            },
+            {
+                "text": "los",
+                "timestamp": 68978
+            },
+            {
+                "text": "steamy",
+                "timestamp": 69297
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 71815,
+        "edited": {
+            "timestamp": 1700533148559,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Me",
+                "timestamp": 69581
+            },
+            {
+                "text": "dej\u00c3\u00b3",
+                "timestamp": 69794
+            },
+            {
+                "text": "el",
+                "timestamp": 70002
+            },
+            {
+                "text": "n\u00c3\u00bamero",
+                "timestamp": 70220
+            },
+            {
+                "text": "'e",
+                "timestamp": 70414
+            },
+            {
+                "text": "tel\u00c3\u00a9fono",
+                "timestamp": 70630
+            },
+            {
+                "text": "en",
+                "timestamp": 70811
+            },
+            {
+                "text": "el",
+                "timestamp": 71004
+            },
+            {
+                "text": "dock",
+                "timestamp": 71211
+            },
+            {
+                "text": "\u00e2\u20ac\u00b2el",
+                "timestamp": 71383
+            },
+            {
+                "text": "simi",
+                "timestamp": 71555
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 74501,
+        "edited": {
+            "timestamp": 1700533151243,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Yo",
+                "timestamp": 72099
+            },
+            {
+                "text": "vo\u00e2\u20ac\u00b2a",
+                "timestamp": 72402
+            },
+            {
+                "text": "ser",
+                "timestamp": 72681
+            },
+            {
+                "text": "tu",
+                "timestamp": 72867
+            },
+            {
+                "text": "baby",
+                "timestamp": 73055
+            },
+            {
+                "text": "mother",
+                "timestamp": 73251
+            },
+            {
+                "text": "como",
+                "timestamp": 73450
+            },
+            {
+                "text": "YOVNGCHIMI",
+                "timestamp": 74097
+            },
+            {
+                "text": "(Prr)",
+                "timestamp": 74366
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 76816,
+        "edited": {
+            "timestamp": 1700533153556,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "E'",
+                "timestamp": 74715
+            },
+            {
+                "text": "de",
+                "timestamp": 74921
+            },
+            {
+                "text": "west,",
+                "timestamp": 75207
+            },
+            {
+                "text": "bizcochita,",
+                "timestamp": 75421
+            },
+            {
+                "text": "ta",
+                "timestamp": 75867
+            },
+            {
+                "text": "rico,",
+                "timestamp": 76236
+            },
+            {
+                "text": "mini",
+                "timestamp": 76572
+            },
+            {
+                "text": "(Muah)",
+                "timestamp": 76963
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 78043,
+        "edited": {
+            "timestamp": 1700533154791,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "I",
+                "timestamp": 77300
+            },
+            {
+                "text": "know",
+                "timestamp": 77551
+            },
+            {
+                "text": "you",
+                "timestamp": 77725
+            },
+            {
+                "text": "wanna",
+                "timestamp": 77928
+            },
+            {
+                "text": "see",
+                "timestamp": 78235
+            },
+            {
+                "text": "me",
+                "timestamp": 78604
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 81124,
+        "edited": {
+            "timestamp": 1700533157866,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Eso",
+                "timestamp": 78760
+            },
+            {
+                "text": "no",
+                "timestamp": 78937
+            },
+            {
+                "text": "es",
+                "timestamp": 79115
+            },
+            {
+                "text": "na\u00e2\u20ac\u00b2,",
+                "timestamp": 79419
+            },
+            {
+                "text": "d\u00c3\u00a9jate",
+                "timestamp": 79610
+            },
+            {
+                "text": "ver,",
+                "timestamp": 79773
+            },
+            {
+                "text": "\u00c2\u00bfte",
+                "timestamp": 79964
+            },
+            {
+                "text": "va'",
+                "timestamp": 80116
+            },
+            {
+                "text": "a",
+                "timestamp": 80329
+            },
+            {
+                "text": "hacer?,",
+                "timestamp": 80425
+            },
+            {
+                "text": "s\u00c3\u00ad",
+                "timestamp": 80780
+            },
+            {
+                "text": "(Oye)",
+                "timestamp": 80993
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 83603,
+        "edited": {
+            "timestamp": 1700533160351,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Si",
+                "timestamp": 81368
+            },
+            {
+                "text": "la\u00e2\u20ac\u00b2",
+                "timestamp": 81580
+            },
+            {
+                "text": "m\u00c3\u00a1'",
+                "timestamp": 81773
+            },
+            {
+                "text": "putas,",
+                "timestamp": 81996
+            },
+            {
+                "text": "son",
+                "timestamp": 82224
+            },
+            {
+                "text": "la\u00e2\u20ac\u00b2",
+                "timestamp": 82413
+            },
+            {
+                "text": "m\u00c3\u00a1'",
+                "timestamp": 82735
+            },
+            {
+                "text": "fina'",
+                "timestamp": 83038
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 86118,
+        "edited": {
+            "timestamp": 1700533162868,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Si",
+                "timestamp": 83795
+            },
+            {
+                "text": "la\u00e2\u20ac\u00b2",
+                "timestamp": 83993
+            },
+            {
+                "text": "m\u00c3\u00a1\u00e2\u20ac\u00b2",
+                "timestamp": 84360
+            },
+            {
+                "text": "putas,",
+                "timestamp": 84638
+            },
+            {
+                "text": "son",
+                "timestamp": 85002
+            },
+            {
+                "text": "la'",
+                "timestamp": 85209
+            },
+            {
+                "text": "m\u00c3\u00a1\u00e2\u20ac\u00b2",
+                "timestamp": 85409
+            },
+            {
+                "text": "fina'",
+                "timestamp": 86238
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 88716,
+        "edited": {
+            "timestamp": 1700533165466,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Si",
+                "timestamp": 86490
+            },
+            {
+                "text": "la\u00e2\u20ac\u00b2",
+                "timestamp": 86688
+            },
+            {
+                "text": "m\u00c3\u00a1'",
+                "timestamp": 86895
+            },
+            {
+                "text": "putas,",
+                "timestamp": 87244
+            },
+            {
+                "text": "son",
+                "timestamp": 87511
+            },
+            {
+                "text": "la\u00e2\u20ac\u00b2",
+                "timestamp": 87719
+            },
+            {
+                "text": "m\u00c3\u00a1'",
+                "timestamp": 87891
+            },
+            {
+                "text": "fina'",
+                "timestamp": 88710
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 90703,
+        "edited": {
+            "timestamp": 1700533167446,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Si",
+                "timestamp": 88955
+            },
+            {
+                "text": "la\u00e2\u20ac\u00b2",
+                "timestamp": 89153
+            },
+            {
+                "text": "m\u00c3\u00a1\u00e2\u20ac\u00b2",
+                "timestamp": 89382
+            },
+            {
+                "text": "putas,",
+                "timestamp": 89647
+            },
+            {
+                "text": "son",
+                "timestamp": 89871
+            },
+            {
+                "text": "la'",
+                "timestamp": 90064
+            },
+            {
+                "text": "m\u00c3\u00a1\u00e2\u20ac\u00b2",
+                "timestamp": 90379
+            },
+            {
+                "text": "fina'",
+                "timestamp": 90670
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 93931,
+        "edited": {
+            "timestamp": 1700533170678,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Digan",
+                "timestamp": 91076
+            },
+            {
+                "text": "lo",
+                "timestamp": 91244
+            },
+            {
+                "text": "que",
+                "timestamp": 91454
+            },
+            {
+                "text": "digan,",
+                "timestamp": 91650
+            },
+            {
+                "text": "vamo\u00e2\u20ac\u00b2",
+                "timestamp": 91847
+            },
+            {
+                "text": "a",
+                "timestamp": 92209
+            },
+            {
+                "text": "gozarno'",
+                "timestamp": 92941
+            },
+            {
+                "text": "la",
+                "timestamp": 93199
+            },
+            {
+                "text": "vida",
+                "timestamp": 93507
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 98959,
+        "edited": {
+            "timestamp": 1700533175708,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Di-di-di-di-digan",
+                "timestamp": 96203
+            },
+            {
+                "text": "lo",
+                "timestamp": 96515
+            },
+            {
+                "text": "que",
+                "timestamp": 96874
+            },
+            {
+                "text": "digan,",
+                "timestamp": 97243
+            },
+            {
+                "text": "vamo\u00e2\u20ac\u00b2",
+                "timestamp": 97555
+            },
+            {
+                "text": "a",
+                "timestamp": 97768
+            },
+            {
+                "text": "gozarno'",
+                "timestamp": 97997
+            },
+            {
+                "text": "la",
+                "timestamp": 98177
+            },
+            {
+                "text": "vida",
+                "timestamp": 98476
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 102983,
+        "edited": {
+            "timestamp": 1700533179734,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Ey,",
+                "timestamp": 99438
+            },
+            {
+                "text": "ey,",
+                "timestamp": 100306
+            },
+            {
+                "text": "me",
+                "timestamp": 100516
+            },
+            {
+                "text": "gustan",
+                "timestamp": 100701
+            },
+            {
+                "text": "las",
+                "timestamp": 100905
+            },
+            {
+                "text": "sucier\u00c3\u00ada',",
+                "timestamp": 101964
+            },
+            {
+                "text": "baby,",
+                "timestamp": 102132
+            },
+            {
+                "text": "how",
+                "timestamp": 102330
+            },
+            {
+                "text": "\u00e2\u20ac\u00b2bout",
+                "timestamp": 102497
+            },
+            {
+                "text": "you?",
+                "timestamp": 102660
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 105449,
+        "edited": {
+            "timestamp": 1700533182198,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Tengo",
+                "timestamp": 103445
+            },
+            {
+                "text": "el",
+                "timestamp": 103726
+            },
+            {
+                "text": "bicho",
+                "timestamp": 103975
+            },
+            {
+                "text": "afeita\u00e2\u20ac\u00b2o",
+                "timestamp": 104199
+            },
+            {
+                "text": "y",
+                "timestamp": 104506
+            },
+            {
+                "text": "cabez\u00c3\u00b3n",
+                "timestamp": 104920
+            },
+            {
+                "text": "como",
+                "timestamp": 105158
+            },
+            {
+                "text": "Caillou",
+                "timestamp": 105543
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 107672,
+        "edited": {
+            "timestamp": 1700533184424,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Besito'",
+                "timestamp": 105826
+            },
+            {
+                "text": "en",
+                "timestamp": 106092
+            },
+            {
+                "text": "el",
+                "timestamp": 106279
+            },
+            {
+                "text": "cuello,",
+                "timestamp": 106458
+            },
+            {
+                "text": "besito\u00e2\u20ac\u00b2",
+                "timestamp": 107293
+            },
+            {
+                "text": "en",
+                "timestamp": 107584
+            },
+            {
+                "text": "el",
+                "timestamp": 107779
+            },
+            {
+                "text": "toto",
+                "timestamp": 108154
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 110428,
+        "edited": {
+            "timestamp": 1700533187176,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "No",
+                "timestamp": 108360
+            },
+            {
+                "text": "s\u00c3\u00a9",
+                "timestamp": 108538
+            },
+            {
+                "text": "qu\u00c3\u00a9",
+                "timestamp": 108718
+            },
+            {
+                "text": "t\u00c3\u00ba",
+                "timestamp": 108901
+            },
+            {
+                "text": "me",
+                "timestamp": 109248
+            },
+            {
+                "text": "hiciste,",
+                "timestamp": 109438
+            },
+            {
+                "text": "mami,",
+                "timestamp": 109647
+            },
+            {
+                "text": "que",
+                "timestamp": 109814
+            },
+            {
+                "text": "me",
+                "timestamp": 110088
+            },
+            {
+                "text": "tiene",
+                "timestamp": 110264
+            },
+            {
+                "text": "loco",
+                "timestamp": 110628
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 113496,
+        "edited": {
+            "timestamp": 1700533190239,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Dale,",
+                "timestamp": 110823
+            },
+            {
+                "text": "vamo'",
+                "timestamp": 111075
+            },
+            {
+                "text": "pa",
+                "timestamp": 111412
+            },
+            {
+                "text": "la",
+                "timestamp": 111702
+            },
+            {
+                "text": "Gucci,",
+                "timestamp": 111904
+            },
+            {
+                "text": "pa",
+                "timestamp": 112060
+            },
+            {
+                "text": "hacerlo",
+                "timestamp": 112254
+            },
+            {
+                "text": "en",
+                "timestamp": 112417
+            },
+            {
+                "text": "el",
+                "timestamp": 112719
+            },
+            {
+                "text": "probador",
+                "timestamp": 113562
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 115891,
+        "edited": {
+            "timestamp": 1700533192634,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "De",
+                "timestamp": 113782
+            },
+            {
+                "text": "espaldita",
+                "timestamp": 113948
+            },
+            {
+                "text": "y",
+                "timestamp": 114133
+            },
+            {
+                "text": "a",
+                "timestamp": 114440
+            },
+            {
+                "text": "la",
+                "timestamp": 114627
+            },
+            {
+                "text": "ve\u00e2\u20ac\u00b2",
+                "timestamp": 114818
+            },
+            {
+                "text": "el",
+                "timestamp": 114977
+            },
+            {
+                "text": "vibrador",
+                "timestamp": 115165
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 118659,
+        "edited": {
+            "timestamp": 1700533195407,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "El",
+                "timestamp": 115883
+            },
+            {
+                "text": "polvito",
+                "timestamp": 116048
+            },
+            {
+                "text": "en",
+                "timestamp": 116239
+            },
+            {
+                "text": "la",
+                "timestamp": 116466
+            },
+            {
+                "text": "ma\u00c3\u00b1ana,",
+                "timestamp": 116620
+            },
+            {
+                "text": "le",
+                "timestamp": 116821
+            },
+            {
+                "text": "digo",
+                "timestamp": 117030
+            },
+            {
+                "text": "\"el",
+                "timestamp": 117279
+            },
+            {
+                "text": "despertador\"",
+                "timestamp": 117320
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 121082,
+        "edited": {
+            "timestamp": 1700533197824,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "To'",
+                "timestamp": 118491
+            },
+            {
+                "text": "el",
+                "timestamp": 118646
+            },
+            {
+                "text": "mundo",
+                "timestamp": 118852
+            },
+            {
+                "text": "habla,",
+                "timestamp": 119038
+            },
+            {
+                "text": "pero",
+                "timestamp": 119220
+            },
+            {
+                "text": "est\u00c3\u00a1n",
+                "timestamp": 119547
+            },
+            {
+                "text": "de",
+                "timestamp": 119759
+            },
+            {
+                "text": "espectador",
+                "timestamp": 119935
+            },
+            {
+                "text": "(ey,",
+                "timestamp": 120532
+            },
+            {
+                "text": "ey)",
+                "timestamp": 121205
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 124350,
+        "edited": {
+            "timestamp": 1700533201099,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Se",
+                "timestamp": 121385
+            },
+            {
+                "text": "preguntan",
+                "timestamp": 121569
+            },
+            {
+                "text": "c\u00c3\u00b3mo",
+                "timestamp": 121970
+            },
+            {
+                "text": "no\u00e2\u20ac\u00b2",
+                "timestamp": 122362
+            },
+            {
+                "text": "comunicamo',",
+                "timestamp": 122569
+            },
+            {
+                "text": "ey",
+                "timestamp": 124273
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 128187,
+        "edited": {
+            "timestamp": 1700533204934,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Mejor",
+                "timestamp": 124588
+            },
+            {
+                "text": "ni",
+                "timestamp": 125117
+            },
+            {
+                "text": "le'",
+                "timestamp": 125291
+            },
+            {
+                "text": "contamo\u00e2\u20ac\u00b2",
+                "timestamp": 126599
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 129087,
+        "edited": {
+            "timestamp": 1700533205829,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Dile\u00e2\u20ac\u00b2",
+                "timestamp": 126890
+            },
+            {
+                "text": "que",
+                "timestamp": 127202
+            },
+            {
+                "text": "de",
+                "timestamp": 127397
+            },
+            {
+                "text": "una",
+                "timestamp": 127575
+            },
+            {
+                "text": "conectamo',",
+                "timestamp": 127765
+            },
+            {
+                "text": "je",
+                "timestamp": 129108
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 130839,
+        "edited": {
+            "timestamp": 1700533207588,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Y",
+                "timestamp": 129447
+            },
+            {
+                "text": "que",
+                "timestamp": 129630
+            },
+            {
+                "text": "chingando",
+                "timestamp": 129917
+            },
+            {
+                "text": "no\u00e2\u20ac\u00b2",
+                "timestamp": 130222
+            },
+            {
+                "text": "matamo'",
+                "timestamp": 130800
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 133706,
+        "edited": {
+            "timestamp": 1700533210456,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Que",
+                "timestamp": 131101
+            },
+            {
+                "text": "yo",
+                "timestamp": 131308
+            },
+            {
+                "text": "soy",
+                "timestamp": 131479
+            },
+            {
+                "text": "un",
+                "timestamp": 131675
+            },
+            {
+                "text": "bellaco,",
+                "timestamp": 131856
+            },
+            {
+                "text": "pero",
+                "timestamp": 132319
+            },
+            {
+                "text": "t\u00c3\u00ba",
+                "timestamp": 132767
+            },
+            {
+                "text": "me",
+                "timestamp": 132978
+            },
+            {
+                "text": "gana\u00e2\u20ac\u00b2",
+                "timestamp": 133526
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 135945,
+        "edited": {
+            "timestamp": 1700533212687,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Bien",
+                "timestamp": 133811
+            },
+            {
+                "text": "arrebata'o",
+                "timestamp": 134030
+            },
+            {
+                "text": "chingando",
+                "timestamp": 134522
+            },
+            {
+                "text": "en",
+                "timestamp": 134804
+            },
+            {
+                "text": "casa",
+                "timestamp": 135004
+            },
+            {
+                "text": "de",
+                "timestamp": 135211
+            },
+            {
+                "text": "tu",
+                "timestamp": 135383
+            },
+            {
+                "text": "hermana",
+                "timestamp": 135994
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 138183,
+        "edited": {
+            "timestamp": 1700533214932,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Yo",
+                "timestamp": 136209
+            },
+            {
+                "text": "soy",
+                "timestamp": 136413
+            },
+            {
+                "text": "tu",
+                "timestamp": 136603
+            },
+            {
+                "text": "bambino,",
+                "timestamp": 136791
+            },
+            {
+                "text": "t\u00c3\u00ba",
+                "timestamp": 137348
+            },
+            {
+                "text": "ere\u00e2\u20ac\u00b2",
+                "timestamp": 137742
+            },
+            {
+                "text": "mi",
+                "timestamp": 138021
+            },
+            {
+                "text": "villana",
+                "timestamp": 138527
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 143864,
+        "edited": {
+            "timestamp": 1700533220606,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Vamo'",
+                "timestamp": 138782
+            },
+            {
+                "text": "a",
+                "timestamp": 138991
+            },
+            {
+                "text": "hacerlo",
+                "timestamp": 139181
+            },
+            {
+                "text": "hoy,",
+                "timestamp": 139796
+            },
+            {
+                "text": "porque",
+                "timestamp": 139989
+            },
+            {
+                "text": "nadie",
+                "timestamp": 140336
+            },
+            {
+                "text": "sabe",
+                "timestamp": 140567
+            },
+            {
+                "text": "lo",
+                "timestamp": 140762
+            },
+            {
+                "text": "que",
+                "timestamp": 141020
+            },
+            {
+                "text": "va",
+                "timestamp": 141218
+            },
+            {
+                "text": "a",
+                "timestamp": 141397
+            },
+            {
+                "text": "pasar",
+                "timestamp": 141728
+            },
+            {
+                "text": "ma\u00c3\u00b1ana",
+                "timestamp": 142147
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 148527,
+        "edited": {
+            "timestamp": 1700533225271,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Ey,",
+                "timestamp": 144423
+            },
+            {
+                "text": "por",
+                "timestamp": 144745
+            },
+            {
+                "text": "la",
+                "timestamp": 145023
+            },
+            {
+                "text": "forma",
+                "timestamp": 145226
+            },
+            {
+                "text": "en",
+                "timestamp": 145415
+            },
+            {
+                "text": "que",
+                "timestamp": 145613
+            },
+            {
+                "text": "me",
+                "timestamp": 145809
+            },
+            {
+                "text": "chinga",
+                "timestamp": 145980
+            },
+            {
+                "text": "a",
+                "timestamp": 146176
+            },
+            {
+                "text": "vece'",
+                "timestamp": 146391
+            },
+            {
+                "text": "pienso",
+                "timestamp": 146624
+            },
+            {
+                "text": "que",
+                "timestamp": 147022
+            },
+            {
+                "text": "me",
+                "timestamp": 147412
+            },
+            {
+                "text": "ama,",
+                "timestamp": 147671
+            },
+            {
+                "text": "ey",
+                "timestamp": 148545
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 152689,
+        "edited": {
+            "timestamp": 1700533229438,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "La",
+                "timestamp": 148776
+            },
+            {
+                "text": "beibi",
+                "timestamp": 148984
+            },
+            {
+                "text": "tiene",
+                "timestamp": 149125
+            },
+            {
+                "text": "cuarto\u00e2\u20ac\u00b2,",
+                "timestamp": 149301
+            },
+            {
+                "text": "tiene",
+                "timestamp": 150183
+            },
+            {
+                "text": "lo",
+                "timestamp": 150550
+            },
+            {
+                "text": "de",
+                "timestamp": 150805
+            },
+            {
+                "text": "ella,",
+                "timestamp": 151012
+            },
+            {
+                "text": "hace",
+                "timestamp": 151224
+            },
+            {
+                "text": "lo",
+                "timestamp": 151417
+            },
+            {
+                "text": "que",
+                "timestamp": 151648
+            },
+            {
+                "text": "le",
+                "timestamp": 151860
+            },
+            {
+                "text": "da",
+                "timestamp": 152056
+            },
+            {
+                "text": "la",
+                "timestamp": 152204
+            },
+            {
+                "text": "gana,",
+                "timestamp": 152646
+            },
+            {
+                "text": "je",
+                "timestamp": 153974
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 158217,
+        "edited": {
+            "timestamp": 1700533234959,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Mami,",
+                "timestamp": 154683
+            },
+            {
+                "text": "hoy",
+                "timestamp": 154893
+            },
+            {
+                "text": "voy",
+                "timestamp": 155320
+            },
+            {
+                "text": "a",
+                "timestamp": 155614
+            },
+            {
+                "text": "ense\u00c3\u00b1arte",
+                "timestamp": 155831
+            },
+            {
+                "text": "c\u00c3\u00b3mo",
+                "timestamp": 156235
+            },
+            {
+                "text": "e\u00e2\u20ac\u00b2",
+                "timestamp": 156486
+            },
+            {
+                "text": "que",
+                "timestamp": 156694
+            },
+            {
+                "text": "un",
+                "timestamp": 156875
+            },
+            {
+                "text": "culo",
+                "timestamp": 157057
+            },
+            {
+                "text": "se",
+                "timestamp": 157651
+            },
+            {
+                "text": "mama,",
+                "timestamp": 157809
+            },
+            {
+                "text": "je,",
+                "timestamp": 158438
+            },
+            {
+                "text": "je",
+                "timestamp": 158786
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 160399,
+        "edited": {
+            "timestamp": 1700533237150,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Dame",
+                "timestamp": 159144
+            },
+            {
+                "text": "ac\u00c3\u00a1,",
+                "timestamp": 159342
+            },
+            {
+                "text": "ven",
+                "timestamp": 159557
+            },
+            {
+                "text": "aqu\u00c3\u00ad,",
+                "timestamp": 159757
+            },
+            {
+                "text": "beibi,",
+                "timestamp": 159946
+            },
+            {
+                "text": "ponte",
+                "timestamp": 160111
+            },
+            {
+                "text": "en",
+                "timestamp": 160338
+            },
+            {
+                "text": "cuatro,",
+                "timestamp": 160526
+            },
+            {
+                "text": "dale",
+                "timestamp": 160966
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 165550,
+        "edited": {
+            "timestamp": 1700533242294,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Oye,",
+                "timestamp": 162146
+            },
+            {
+                "text": "e'to",
+                "timestamp": 163309
+            },
+            {
+                "text": "e\u00e2\u20ac\u00b2",
+                "timestamp": 163465
+            },
+            {
+                "text": "pa",
+                "timestamp": 163683
+            },
+            {
+                "text": "to'a\u00e2\u20ac\u00b2",
+                "timestamp": 164046
+            },
+            {
+                "text": "la'",
+                "timestamp": 164216
+            },
+            {
+                "text": "bebezota\u00e2\u20ac\u00b2",
+                "timestamp": 164568
+            },
+            {
+                "text": "del",
+                "timestamp": 164829
+            },
+            {
+                "text": "mundo",
+                "timestamp": 165128
+            },
+            {
+                "text": "entero",
+                "timestamp": 166084
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 168440,
+        "edited": {
+            "timestamp": 1700533245184,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Que",
+                "timestamp": 166282
+            },
+            {
+                "text": "est\u00c3\u00a1n",
+                "timestamp": 166459
+            },
+            {
+                "text": "bien",
+                "timestamp": 166828
+            },
+            {
+                "text": "rica',",
+                "timestamp": 167141
+            },
+            {
+                "text": "que",
+                "timestamp": 167340
+            },
+            {
+                "text": "tienen",
+                "timestamp": 167550
+            },
+            {
+                "text": "lo",
+                "timestamp": 167848
+            },
+            {
+                "text": "de",
+                "timestamp": 168038
+            },
+            {
+                "text": "ella'",
+                "timestamp": 168677
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 173220,
+        "edited": {
+            "timestamp": 1700533249962,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Y",
+                "timestamp": 168894
+            },
+            {
+                "text": "que",
+                "timestamp": 169078
+            },
+            {
+                "text": "viven",
+                "timestamp": 169241
+            },
+            {
+                "text": "como",
+                "timestamp": 169431
+            },
+            {
+                "text": "les",
+                "timestamp": 169600
+            },
+            {
+                "text": "salga",
+                "timestamp": 169749
+            },
+            {
+                "text": "de",
+                "timestamp": 169905
+            },
+            {
+                "text": "lo\u00e2\u20ac\u00b2,",
+                "timestamp": 170070
+            },
+            {
+                "text": "de",
+                "timestamp": 170241
+            },
+            {
+                "text": "lo\u00e2\u20ac\u00b2",
+                "timestamp": 170731
+            },
+            {
+                "text": "ovario',",
+                "timestamp": 171560
+            },
+            {
+                "text": "de",
+                "timestamp": 171888
+            },
+            {
+                "text": "lo\u00e2\u20ac\u00b2",
+                "timestamp": 172146
+            },
+            {
+                "text": "cojone',",
+                "timestamp": 172619
+            },
+            {
+                "text": "de",
+                "timestamp": 172924
+            },
+            {
+                "text": "donde",
+                "timestamp": 173129
+            },
+            {
+                "text": "sea",
+                "timestamp": 173291
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 176246,
+        "edited": {
+            "timestamp": 1700533252987,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Vamo\u00e2\u20ac\u00b2",
+                "timestamp": 174480
+            },
+            {
+                "text": "todo",
+                "timestamp": 174698
+            },
+            {
+                "text": "el",
+                "timestamp": 174915
+            },
+            {
+                "text": "mundo",
+                "timestamp": 175117
+            },
+            {
+                "text": "a",
+                "timestamp": 175307
+            },
+            {
+                "text": "putear,",
+                "timestamp": 175501
+            },
+            {
+                "text": "que",
+                "timestamp": 175688
+            },
+            {
+                "text": "se",
+                "timestamp": 175873
+            },
+            {
+                "text": "joda",
+                "timestamp": 176497
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 178511,
+        "edited": {
+            "timestamp": 1700533255260,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "De",
+                "timestamp": 176794
+            },
+            {
+                "text": "parte",
+                "timestamp": 176963
+            },
+            {
+                "text": "de",
+                "timestamp": 177141
+            },
+            {
+                "text": "El",
+                "timestamp": 177315
+            },
+            {
+                "text": "Conejo",
+                "timestamp": 177478
+            },
+            {
+                "text": "y",
+                "timestamp": 177734
+            },
+            {
+                "text": "Young",
+                "timestamp": 177924
+            },
+            {
+                "text": "Miko",
+                "timestamp": 178295
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 181333,
+        "edited": {
+            "timestamp": 1700533258080,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Dime",
+                "timestamp": 179274
+            },
+            {
+                "text": "algo,",
+                "timestamp": 179614
+            },
+            {
+                "text": "mami,",
+                "timestamp": 180144
+            },
+            {
+                "text": "\u00c2\u00bfqu\u00c3\u00a9",
+                "timestamp": 180461
+            },
+            {
+                "text": "fue?",
+                "timestamp": 180779
+            },
+            {
+                "text": "Ey",
+                "timestamp": 181129
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 186186,
+        "edited": {
+            "timestamp": 1700533262930,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Mami,",
+                "timestamp": 181707
+            },
+            {
+                "text": "s\u00c3\u00a9",
+                "timestamp": 182075
+            },
+            {
+                "text": "t\u00c3\u00ba,",
+                "timestamp": 182783
+            },
+            {
+                "text": "y",
+                "timestamp": 183057
+            },
+            {
+                "text": "que",
+                "timestamp": 183247
+            },
+            {
+                "text": "se",
+                "timestamp": 183496
+            },
+            {
+                "text": "joda,",
+                "timestamp": 183689
+            },
+            {
+                "text": "y",
+                "timestamp": 185312
+            },
+            {
+                "text": "que",
+                "timestamp": 185534
+            },
+            {
+                "text": "se",
+                "timestamp": 185940
+            },
+            {
+                "text": "joda",
+                "timestamp": 186493
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 189951,
+        "edited": {
+            "timestamp": 1700533266694,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "H\u00c3\u00a1blale",
+                "timestamp": 186760
+            },
+            {
+                "text": "de",
+                "timestamp": 186928
+            },
+            {
+                "text": "ticket,",
+                "timestamp": 187260
+            },
+            {
+                "text": "no",
+                "timestamp": 187845
+            },
+            {
+                "text": "le",
+                "timestamp": 188077
+            },
+            {
+                "text": "hable'",
+                "timestamp": 188306
+            },
+            {
+                "text": "de",
+                "timestamp": 188618
+            },
+            {
+                "text": "boda,",
+                "timestamp": 188980
+            },
+            {
+                "text": "no",
+                "timestamp": 190097
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 191946,
+        "edited": {
+            "timestamp": 1700533268690,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "No",
+                "timestamp": 190337
+            },
+            {
+                "text": "le",
+                "timestamp": 190540
+            },
+            {
+                "text": "hable\u00e2\u20ac\u00b2",
+                "timestamp": 190730
+            },
+            {
+                "text": "de",
+                "timestamp": 191087
+            },
+            {
+                "text": "boda",
+                "timestamp": 191586
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 196388,
+        "edited": {
+            "timestamp": 1700533273136,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Mami,",
+                "timestamp": 191827
+            },
+            {
+                "text": "s\u00c3\u00a9",
+                "timestamp": 192034
+            },
+            {
+                "text": "t\u00c3\u00ba,",
+                "timestamp": 192371
+            },
+            {
+                "text": "y",
+                "timestamp": 193086
+            },
+            {
+                "text": "que",
+                "timestamp": 193272
+            },
+            {
+                "text": "se",
+                "timestamp": 193550
+            },
+            {
+                "text": "joda,",
+                "timestamp": 193856
+            },
+            {
+                "text": "y",
+                "timestamp": 195364
+            },
+            {
+                "text": "que",
+                "timestamp": 195579
+            },
+            {
+                "text": "se",
+                "timestamp": 196037
+            },
+            {
+                "text": "joda",
+                "timestamp": 196408
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 199401,
+        "edited": {
+            "timestamp": 1700533276142,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "H\u00c3\u00a1blale",
+                "timestamp": 196689
+            },
+            {
+                "text": "de",
+                "timestamp": 196880
+            },
+            {
+                "text": "ticket,",
+                "timestamp": 197077
+            },
+            {
+                "text": "no",
+                "timestamp": 197876
+            },
+            {
+                "text": "le",
+                "timestamp": 198120
+            },
+            {
+                "text": "hable'",
+                "timestamp": 198331
+            },
+            {
+                "text": "de",
+                "timestamp": 198772
+            },
+            {
+                "text": "boda",
+                "timestamp": 199416
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 202640,
+        "edited": {
+            "timestamp": 1700533279383,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "No,",
+                "timestamp": 200202
+            },
+            {
+                "text": "ja,",
+                "timestamp": 200360
+            },
+            {
+                "text": "no",
+                "timestamp": 200781
+            },
+            {
+                "text": "le",
+                "timestamp": 200974
+            },
+            {
+                "text": "hable'",
+                "timestamp": 201231
+            },
+            {
+                "text": "de",
+                "timestamp": 201480
+            },
+            {
+                "text": "boda,",
+                "timestamp": 202138
+            },
+            {
+                "text": "ja",
+                "timestamp": 202698
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 204967,
+        "edited": {
+            "timestamp": 1700533281716,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Ay",
+                "timestamp": 205233
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 207102,
+        "edited": {
+            "timestamp": 1700533283846,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Dime,",
+                "timestamp": 206007
+            },
+            {
+                "text": "ja,",
+                "timestamp": 206178
+            },
+            {
+                "text": "ja,",
+                "timestamp": 206628
+            },
+            {
+                "text": "ja",
+                "timestamp": 207036
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 211104,
+        "edited": {
+            "timestamp": 1700533287852,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Mera,",
+                "timestamp": 207842
+            },
+            {
+                "text": "t\u00c3\u00ba",
+                "timestamp": 208267
+            },
+            {
+                "text": "sabe\u00e2\u20ac\u00b2",
+                "timestamp": 208499
+            },
+            {
+                "text": "que",
+                "timestamp": 208688
+            },
+            {
+                "text": "a",
+                "timestamp": 208864
+            },
+            {
+                "text": "nosotro\u00e2\u20ac\u00b2",
+                "timestamp": 209040
+            },
+            {
+                "text": "no'",
+                "timestamp": 209229
+            },
+            {
+                "text": "importa",
+                "timestamp": 209398
+            },
+            {
+                "text": "un",
+                "timestamp": 209619
+            },
+            {
+                "text": "bicho",
+                "timestamp": 209798
+            },
+            {
+                "text": "lo",
+                "timestamp": 209989
+            },
+            {
+                "text": "que",
+                "timestamp": 210160
+            },
+            {
+                "text": "ustede\u00e2\u20ac\u00b2",
+                "timestamp": 210342
+            },
+            {
+                "text": "piensen,",
+                "timestamp": 210509
+            },
+            {
+                "text": "\u00c2\u00bfverd\u00c3\u00a1?",
+                "timestamp": 211164
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 212770,
+        "edited": {
+            "timestamp": 1700533289518,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Ah,",
+                "timestamp": 211714
+            },
+            {
+                "text": "okey,",
+                "timestamp": 211908
+            },
+            {
+                "text": "okey,",
+                "timestamp": 212561
+            },
+            {
+                "text": "okey,",
+                "timestamp": 213027
+            },
+            {
+                "text": "okey",
+                "timestamp": 214394
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    },
+    {
+        "timestamp": 214242,
+        "edited": {
+            "timestamp": 1700533290985,
+            "user": "00000000000000000000"
+        },
+        "voice": "MF",
+        "instrumental": false,
+        "emphasis": 1,
+        "authors": [
+            "00000000000000000000"
+        ],
+        "comments": [
+            {
+                "user": "00000000000000000000",
+                "text": ""
+            }
+        ],
+        "text": [
+            {
+                "text": "Tato",
+                "timestamp": 215315
+            }
+        ],
+        "part": "chorus",
+        "verse": null,
+        "singers": [
+            0
+        ]
+    }
+]

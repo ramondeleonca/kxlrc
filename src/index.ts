@@ -1,7 +1,7 @@
-import msgpackr from 'msgpackr';
+import * as msgpackr from 'msgpackr';
 import { z } from 'zod';
 import { KXLRCLyrics, KXLRCLine } from './types';
-import { EventEmitter } from 'events';
+import EventifyEmitter from './eventify';
 
 export type KXLRCEventMap = {
     "edited": { lyric: z.infer<typeof KXLRCLine>, index: number },
@@ -28,7 +28,7 @@ export type KXLRCEventMap = {
  * @example 
  * const lyrics = KXLRC.parse(fs.readFileSync("lyrics.kxlrc"));
  */
-export default class KXLRC extends EventEmitter {
+export default class KXLRC extends EventifyEmitter<KXLRCEventMap> {
     /**
      * Parsed lyrics array
      */
@@ -45,8 +45,8 @@ export default class KXLRC extends EventEmitter {
         super();
         if (lyrics) {
             this.lyrics = KXLRC.parse(lyrics, packed);
-            this.emit("parsed", { detail: { lyrics: this.lyrics } });
-            this.emit("any", { detail: { lyrics: this.lyrics } });
+            this.emit("parsed", { lyrics: this.lyrics });
+            this.emit("any", { lyrics: this.lyrics });
         }
     }
 
@@ -91,8 +91,8 @@ export default class KXLRC extends EventEmitter {
         if (!this.lyrics) this.lyrics = [];
         if (index) this.lyrics?.splice(index, 0, KXLRCLine.parse({...lyric, timestamp: fillTimestamp && this.lyrics[index - 1] && this.lyrics[index + 1] ? Math.ceil((this.lyrics[index - 1]?.timestamp + this.lyrics[index + 1]?.timestamp) / 2) : lyric.timestamp}));
         else this.lyrics.push(KXLRCLine.parse(lyric));
-        this.emit("added", { detail: { lyric: this.lyrics[index], index } });
-        this.emit("any", { detail: { lyric: this.lyrics[index], index } });
+        this.emit("added", { lyric: this.lyrics[index], index });
+        this.emit("any", { lyric: this.lyrics[index], index });
     }
 
     /**
@@ -144,8 +144,8 @@ export default class KXLRC extends EventEmitter {
     public edit(lyric: Partial<z.infer<typeof KXLRCLine>>, index: number) {
         if (!this.lyrics) this.lyrics = [];
         this.lyrics[index] = KXLRCLine.partial().parse({...(this.lyrics[index] ? this.lyrics[index] : {}), ...lyric});
-        this.emit("edited", { detail: { lyric: this.lyrics[index], index } });
-        this.emit("any", { detail: { lyric: this.lyrics[index], index } });
+        this.emit("edited", { lyric: this.lyrics[index], index });
+        this.emit("any", { lyric: this.lyrics[index], index });
     }
 
     /**
@@ -199,8 +199,8 @@ export default class KXLRC extends EventEmitter {
         lyric = this.lyrics[index];
         if (this.lyrics && typeof lyric === 'number') this.lyrics = this.lyrics.filter((_, i) => i !== lyric);
         else this.lyrics = this.lyrics.filter((_, i) => i !== index);
-        this.emit("removed", { detail: { lyric, index } });
-        this.emit("any", { detail: { lyric, index } });
+        this.emit("removed", { lyric, index });
+        this.emit("any", { lyric, index });
     }
 
     /**
@@ -320,36 +320,10 @@ export default class KXLRC extends EventEmitter {
         return JSON.stringify(lyrics);
     }
 
-    on<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this {
-        return super.on(eventName, listener);
-    }
-
-    addListener<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this {
-        return super.addListener(eventName, listener);
-    }
-
-    off<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this {
-        return super.off(eventName, listener);
-    }
-
-    removeListener<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this {
-        return super.removeListener(eventName, listener);
-    }
-
-    once<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this {
-        return super.once(eventName, listener);
-    }
-
-    prependListener<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this {
-        return super.prependListener(eventName, listener);
-    }
-
-    prependOnceListener<T extends keyof KXLRCEventMap>(eventName: T, listener: (ev: KXLRCEventMap[T]) => void): this {
-        return super.prependOnceListener(eventName, listener);
-    }
-
-    removeAllListeners<T extends keyof KXLRCEventMap>(eventName?: T): this {
-        return super.removeAllListeners(eventName);
+    public static timestampedTextToString(text: z.infer<typeof KXLRCLyrics>[number]["text"]) {
+        let result = "";
+        for (const textEntry of text) result += `${textEntry.text} `;
+        return result.slice(0, -1);
     }
 
     [Symbol.iterator]() {return this.lyrics[Symbol.iterator]()}

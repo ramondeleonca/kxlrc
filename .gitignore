@@ -1,4 +1,4 @@
 node_modules
-src/tests/assets
-scripts/**.json
-scripts/**/assets/
+# src/tests/assets
+# scripts/**.json
+# scripts/**/assets/

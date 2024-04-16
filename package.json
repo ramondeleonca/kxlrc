@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "big-json": "^3.2.0",
+    "events": "^3.3.0",
     "msgpackr": "^1.9.9",
     "zod": "^3.22.4"
   }
